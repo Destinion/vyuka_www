@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolutní a relativní jednotky v CSS</title>
+
+    <style>
+        .hlavni{
+            border: 1px solid black;
+            width: 80%;
+
+        }
+        .kulicka{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: violet;
+        }
+        .text{
+            width: 60%;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .okraj{
+            width: 40%;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nadpis velikosti 2rem</h1>
+    <div class="hlavni">
+        <div class="container">
+            
+            <div class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo sunt, qui rem iste fuga! Rem voluptas eius molestiae optio repellat autem, eum eaque est minus doloremque dolorem esse animi!
+            </div>
+            <div class="okraj">
+                <div class="kulicka"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="okraj">
+                <div class="kulicka"></div>
+            </div>
+            <div class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo sunt, qui rem iste fuga! Rem voluptas eius molestiae optio repellat autem, eum eaque est minus doloremque dolorem esse animi!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

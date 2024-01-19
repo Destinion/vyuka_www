@@ -1,0 +1,30 @@
+div{
+    color: gray; /*Změna barvy písma*/
+    text-align: justify; /*Zarovnání textu - do bloku*/
+    background-color: coral; /*Barva pozadí prvku*/
+}
+.prvni{
+    font-size: 42px; /*velikost písma*/
+    text-decoration: none; /*mění podtržení textu*/
+    font-style: italic; /*zvýraznění písma*/
+    font-family: "Verdana", "Arial", sans-serif; /*nastavení fontu písma*/
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.druhy{
+    text-align: center; /*zarovnání textu - na střed*/
+    font-weight: 900; /*Tloušťka písma*/
+    text-transform: uppercase; /*Kapitálky*/
+
+    /*Nové*/
+    border: 1px solid black; /*shorthand pro rámeček - tloušťka rámečku, typ ohraničení, barva ohraničení*/
+    width: 500px; /*šířka prvku*/
+    height: 500px; /*výška prvku*/
+}
+.kulaty{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}

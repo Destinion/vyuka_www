@@ -1,0 +1,5 @@
+Cvičení 4:
+Vytvořte <span> se zeleným textem, který je zarovnán na pravý okraj. Nastavte textovou transformaci na "uppercase."
+
+Cvičení 5:
+Vytvořte <div> s černým textem na šedém pozadí. Nastavte font na 16px a bold (tučné).

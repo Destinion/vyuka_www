@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: gray;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .prvni{
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .druhy{
+            /*width a height, pokud není děláno úmyslně, by měli mít vždycky velikost uzpůsobenou obsahu*/
+            width: 250px; /*nastavení šířky objektu*/
+            height: 250px; /*nastavení výšky objektu*/
+            /*Pokud je zadán pouze height tak se druhý dopočítá;
+            Pokud je zadán pouze width, tak se druhý dopočítá*/
+            background-color: green;
+            border: 3px solid black; /*shorthand pro rámeček prvku - šířka rámečku, styl rámečku, barva rámečku*/
+            border-radius: 5%; /*zaoblení rámečku - v px nebo od 0% do 50%*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="prvni">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo ipsum, commodi omnis quisquam dolor ducimus veniam eligendi possimus reiciendis, numquam totam nesciunt cumque? Dolor repellendus aperiam dicta, impedit nam officiis.
+        <p>Toto je odstavec</p>
+    </div>
+    <div class="druhy">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempore aspernatur eius saepe veritatis quae distinctio iste praesentium officiis at fuga perspiciatis! Mollitia doloremque ad harum possimus dignissimos, quaerat aperiam.
+    </div>
+</body>
+</html>

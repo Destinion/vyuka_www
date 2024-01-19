@@ -1,0 +1,27 @@
+Pro nadpisy h1 nastavte velikost písma na 48px
+Pro nadpisy h2 nastavte tloušťku fontu na 800
+Všechny nadpisy zarovnejte na střed horizontálně
+u odstavce s třídou "fonty" nastavte font na Arial, sans-serif
+u všech odstavců nastavte velikost písma na 14px
+u čáry podtržení nastavte délku na 50% a šířku na 5px
+
+Pro hlavní kontejner nastavte šířku na 80% a výšku na 800px
+Pro radek nastavte výšku na 50% a šířku na 100%
+Pro sloupec nastavte výšku na 100% a šířku na 20%
+Pro hlavní kontejner nastavte pozadí na #eee
+Pro radek nastavte pozadí na #ddd
+Pro sloupec nastavte pozadí na #ccc
+Obsah řádků zarovnejte pomocí display:flex horizontálně
+
+Pro pasivně agresivní ceduli nastavte pozadí na #f00
+Pro pasivně agresivní ceduli nastavte pozicování na absolutní a na souřadnici z vrchu 0px a zprava na 0px
+
+Pro box nastavte šířku na 100% a výšku na 400px
+Pro prvni nastavte šířku na 30% a výšku na 90%
+Pro druhy nastavte šířku na 30% a výšku na 90%
+Pro prvni nastavte pozadí na #f00
+Pro druhy nastavte pozadí na #00f
+Pro prvni nastavte rámeček na hodnotu 2px solid black
+Pro box nastavte padding na 15px
+Pro box nastavte margin z vrchu na 15px
+Pro prvni a druhy nastavte padding zevnitř na 10 px

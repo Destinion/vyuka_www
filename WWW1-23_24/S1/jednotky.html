@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolutní a relativní jednotky v CSS</title>
+    <style>
+        .absolutni{
+            font-size: 42px;
+            width: 50%; /*% ze šířky/výšky/velikosti nadřazeného prvku*/
+        }
+        div.hlavni{
+            width: 80vw; /*vw, vh - představují % velikost obrazovky zařízení*/
+            display: flex;
+            flex-direction: row;
+        }
+        .relativni{
+            width: 50%;
+            background-color: green;
+            font-size: 3em; /*násobek současné velikosti prvku*/
+        }
+        h1{
+            font-size: 4rem; /*násobek původní velikosti prvku*/
+        }
+    </style>
+</head>
+<body>
+    <div class="hlavni">
+        <div class="absolutni">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus tempore fugit, ratione in sint ipsa eos inventore vel et qui, unde voluptates totam magnam perspiciatis aut ipsum sapiente. Corrupti, facere?</div>
+        <div class="relativni">
+            Tohle je relativní div
+            <h1>Toto je nadpis</h1>
+        </div>
+    </div>
+</body>
+</html>

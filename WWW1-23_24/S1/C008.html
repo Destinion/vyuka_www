@@ -1,0 +1,36 @@
+Vytvořte HTML soubor se třemi bloky div 
+(Jeden obsahuje dva další)
+1. má class Absolutní
+2. má class relativní
+
+Splňte k nim níže vypsané zadání:
+Absolutní jednotky (px):
+    Nastavte výšku <div class="absolutni"> na 100px.
+    Nastavte šířku bloku na 200px.
+    nastavte velikost fontu na 40px
+Relativní jednotky (%):
+    Nastavte šířku <div class="relativni"> na 50% šířky jeho nadřazeného bloku.
+    Nastavte výšku bloku na 75% výšky jeho nadřazeného bloky.
+    Nastavte velikost písma pro blok na 2x původní velikost fontu
+
+
+
+
+<style>
+    .absolutni{
+        width: 200px;
+        height: 100px;
+        font-size: 40px;
+    }
+    .relativni{
+        width: 50%;
+        height: 75%;
+        font-size: 2rem;
+    }
+</style>
+
+....
+<div class="hlavni">
+    <div class="absolutni"></div>
+    <div class="relativni"></div>
+</div>

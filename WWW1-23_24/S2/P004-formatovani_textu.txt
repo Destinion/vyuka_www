@@ -1,0 +1,14 @@
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- Jazykový packet s češtinou -->
+	<meta name="keywords" content="ukázka, stránka, webové HTML">
+	<title>Formátování textu 2</title>
+</head>
+<body>
+	<font face="Ariel">
+		<h1>Nadpis 1</h1>
+		<p>Ukázka bezpatkového písma</p>
+	</font>
+	Ukázka systémového písma
+</body>
+</html>

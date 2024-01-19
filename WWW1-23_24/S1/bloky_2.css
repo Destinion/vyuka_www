@@ -1,0 +1,19 @@
+/*Zápis třídy*/
+.trida{ 
+    background-color: aquamarine;
+}
+/*Zápis id - může být použito pouze u jednoho konkrétního prvku*/
+#prvni_id{
+    color: red;
+}
+
+/*všechny prvky s class "zelena" mají barvu pozadí na zelená*/
+.zelena{
+    background-color: green;
+}
+
+/*vybere jen prvky odstavce s class "zelena"*/
+p.zelena{
+    font-size: 20px;
+    color: white;
+}

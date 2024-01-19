@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dědičnost CSS 1</title>
+    <style>
+        div{ /*Prvky uvnitř dědí všechny vlastnosti*/
+            color: green;
+        }
+        p{
+            background-color: rgb(212, 209, 207);
+            color: red;
+        }
+        .modra{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dědičnost CSS</h1>
+    <div>
+        <h2>Ukázka dědičnosti</h2>
+
+        <p class="modra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum non obcaecati odio, quo nesciunt alias minus dolor sint nihil distinctio sunt fugiat reprehenderit tempora maxime harum perferendis delectus. Veniam, illo!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis atque iste voluptatum laboriosam ducimus, doloremque, ad excepturi explicabo unde rerum ut laborum facilis itaque, amet cum totam eveniet voluptatem voluptatibus.</p>
+    </div>
+</body>
+</html>

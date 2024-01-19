@@ -1,0 +1,9 @@
+div{
+    /*Má základní šířku 100% velikosti nadřazeného prvku*/
+    background-color: blue;
+    color: white;
+}
+span{
+    /*Má základní šířku dle obsahu elementu*/
+    background-color: darkgoldenrod;
+}

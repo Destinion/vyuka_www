@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: gray;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .prvni{
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: capitalize;
+            text-decoration: none;
+
+
+            /*
+            zarovnáte text na střed horizontálně a vertikálně.
+            nastavte mu výšku a šířku na 650px
+            */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 650px;
+            height: 650px;
+            background-color: aqua;
+        }
+        .druhy{
+            background-color: green;
+            
+            /*zarovnejte text do bloku, nastavte barvu písma na červenou. změňte velikost fontu na 48px*/
+            color: red;
+            text-align: justify;
+            font-size: 48px;
+
+            /*
+            změňte velikost bloku .druhy tak, aby v něm byl text obsažený celý a nepřetékal
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="prvni">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo ipsum, commodi omnis quisquam dolor ducimus veniam eligendi possimus reiciendis, numquam totam nesciunt cumque? Dolor repellendus aperiam dicta, impedit nam officiis.
+        <p>Toto je odstavec</p>
+    </div>
+    <div class="druhy">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempore aspernatur eius saepe veritatis quae distinctio iste praesentium officiis at fuga perspiciatis! Mollitia doloremque ad harum possimus dignissimos, quaerat aperiam.
+    </div>
+</body>
+</html>

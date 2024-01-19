@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Připojení fontu pomocí font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>Import fontu a písma</title>
+    <style>
+        p{
+            text-decoration: line-through;
+            text-align: justify;
+            color: blue;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 900;
+            text-transform: lowercase;
+            font-family: 'Times New Roman', Times, serif; /*pokud má název mezery dává se do uvozovek*/
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif; /*Font family - čárkou oddělujeme dodatečné fonty*/
+            /*hlavní bezpatkové Montserrat, Poppins a Roboto*/
+        }
+        /*--------------------*/
+        /*Připojení externího fontu*/
+        h1{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+        h2{
+            font-family: 'Vina Sans', sans-serif;
+        }
+
+        /*Připojení staženého písma*/
+        @font-face {
+            font-family: "Vlastni_font"; /*Deklarujete vy*/
+            src: url(VinaSans-Regular.ttf);
+        }
+        /*Aplikace vlastního fontu*/
+        h3{
+            font-family: "Vlastni_font";
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt dicta eius, cum possimus facilis, perspiciatis odit ad provident amet reiciendis esse alias laboriosam corporis, fugiat laudantium error est quam?</p>
+
+    <h1>Zde je první font - Roboto</h1>
+    <h2>Zde je druhý font - </h2>
+    <h3>Nejlepší předmět na škole jsou Webové stránky a pan učitel Pacner je na nás moc hodný a měl by být přísnější</h3>
+</body>
+</html>

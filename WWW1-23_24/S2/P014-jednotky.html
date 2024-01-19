@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolutní a relativní jednotky v CSS</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 50%; /*% představují procentuální část nadřazeného prvku*/
+            background-color: gray;
+            font-size: 3em;
+        }
+        .kulicka{
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .text{
+            width: 50%; /*představuje 50% šířky bloku .container*/
+            font-size: 3em;
+        }
+        h1{
+            font-size: 5em; /*em, rem - představují násobek původní velikosti fontu*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Nadpis velikosti 2rem</h1>
+    <div class="container">
+        <div class="kulicka">
+
+        </div>
+        <div class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo sunt, qui rem iste fuga! Rem voluptas eius molestiae optio repellat autem, eum eaque est minus doloremque dolorem esse animi!
+        </div>
+    </div>
+</body>
+</html>

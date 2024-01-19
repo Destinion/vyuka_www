@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        div{
+            background-color: #c5c5c5;
+            margin: 10px; /*odsazení prvku od okolních prků*/
+            padding: 10px; /*odsazení obsahu prvku od rámečku prvku*/
+            border: 1px solid black; /*rámeček prvku*/
+
+        }  
+        /*Shorthand a rozpis*/
+        .left{
+            padding: 20px 10px 20px 50px; /*nahoře vpravo dole vlevo*/
+        }  
+        .right{
+            margin-top: 10px;
+            margin-left: auto; /*auto - výpočet od browseru*/
+            margin-right: auto; /*Pokud je hodnota auto z obou stran, tak se prvek centruje horizontálně*/
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, laboriosam atque. Suscipit ipsa dolorum accusantium ratione eveniet, qui, inventore corrupti excepturi expedita asperiores quam aliquid veritatis quos tempore adipisci laudantium?
+    </div>
+    <div class="right">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, laboriosam atque. Suscipit ipsa dolorum accusantium ratione eveniet, qui, inventore corrupti excepturi expedita asperiores quam aliquid veritatis quos tempore adipisci laudantium?
+    </div>
+</body>
+</html>

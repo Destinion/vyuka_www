@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Formulář pro sběr adres zákazníků</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Jméno:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="surname">Příjmení:</label>
+        <input type="text" name="surname" id="surname" required>
+        <br>
+        <label for="street">Ulice:</label>
+        <input type="text" name="street" id="street" required>
+        <br>
+        <label for="city">Město:</label>
+        <input type="text" name="city" id="city" required>
+        <br>
+        <label for="zip">PSČ:</label>
+        <input type="text" name="zip" id="zip" required>
+        <br>
+        <label for="phone">Telefon:</label>
+        <input type="text" name="phone" id="phone" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <input type="submit" value="Odeslat">
+    </form>
+</body>
+</html>

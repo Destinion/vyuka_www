@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Pozicování objektů</title>
+
+    <style>
+        .obrazek{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        .prvni{
+            background-color: darkcyan;
+
+            /*Pozicování pomocí Display:flex*/
+            Display: flex; /*chování zobrazení objektu - flex, block, none*/
+            justify-content: center; /*zarovnání vodorovně - center, space-around, space-between, space-envenly*/
+            align-items: center;  /*zarovnání horizontálně - center, stretch, flex-start*/
+            flex-direction: column; /*zarovnání obsahu - row, column*/
+        }
+        .druhy{
+            Display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        h1{
+            display: none;
+        }
+        h2{
+            /*Pozicování objektu pomocí top, left, right, bottom a position: absolute*/
+            background-color: red;
+
+            position: absolute; /*chování pozice objektu - relative, sticky, absolute*/
+            /*absolute = fixuje objekt na souřadnici*/
+            top: 0; /*udává přesnou souřadnici na stránce*/
+            right: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="prvni">
+        <div class="obrazek"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam obcaecati iure provident. Sint ab itaque vitae libero consequatur. Odit ipsa voluptatum itaque rem earum magnam porro repellat vero cumque!</p>
+    </div>
+    <div class="druhy">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam obcaecati iure provident. Sint ab itaque vitae libero consequatur. Odit ipsa voluptatum itaque rem earum magnam porro repellat vero cumque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam obcaecati iure provident. Sint ab itaque vitae libero consequatur. Odit ipsa voluptatum itaque rem earum magnam porro repellat vero cumque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam obcaecati iure provident. Sint ab itaque vitae libero consequatur. Odit ipsa voluptatum itaque rem earum magnam porro repellat vero cumque!</p>
+    </div>
+    <h1>Tento text není vidět</h1>
+    <h2>Tento text je vidět vždy</h2>
+</body>
+</html>
