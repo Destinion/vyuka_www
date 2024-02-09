@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stavy odkazů</title>
+    <style>
+        /*Pro všechny odkazy nastavíte že nejsou podtržené
+        Pro odkaz na google nastavíte stav při přejetí myší na změnu barvy písma na modrou
+        Pro odkaz na Weilovku nastavíte při kliknutí změnu velikosti písma na 20px
+        pro všechny odkazy nastavíte písma na Arial
+        */
+        a{
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+        .prejeti:hover{
+            color: blue;
+        }
+        .kliknuti:active{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" class="prejeti">Google</a>
+    <a href="https://skolahostivar.cz" class="kliknuti">Škola</a>
+</body>
+</html>
