@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operátory</title>
+</head>
+<body>
+    <div id="vystup_x"></div>
+    <div id="vystup_y"></div>
+    <div id="vystup_z"></div>
+    <div id="vystup"></div>
+
+    <ol>
+        <li id="scitani">
+            Položka
+        </li>
+        <li>
+
+        </li>
+        <li></li>
+    </ol>
+</body>
+</html>
+
+<script>
+    
+    //1. Aritmetické operátory
+    // +, -, *, /, %, ++, --
+    let x = 10;
+    let y = 3;
+    let z;
+
+    //sčítání
+    z = x + y;
+
+    //odčítání
+    z = x - y;
+
+    //násobení
+    z = x * y;
+
+    //dělení
+    z = x / y;
+    
+    // modulo - zbytek po dělení (pro kontrolu lichých/sudých čísel)
+    z = x % y;
+
+    //přičítání o 1 (nebo x++)
+    z = ++x;
+
+    //odčítání o 1
+    z = --y;
+    //--------------------------------------------------------------------------------
+    //2. Přiřazovací - slouží k přiřazení hodnoty
+    // =, +=, -=, *=, /=, %=
+    //Přiřazení hodnoty proměnné
+    x = 10;
+
+    //Přiřazení a zvětšení hodnoty o další
+    x += 5;
+
+    //Přiřazení a zmenší hodnoty o další
+    x -= 5;
+
+
+    //--------------------------------------------------------------------------------
+    //3. Porovnávací - slouží k porovnání hodnot (true/false)
+    // ==, ===, !=, !==, >, <, >=, <=
+
+    //Hledání stejné hodnoty
+    console.log(x == 10);
+
+    //Hledání stejné hodnoty a stejného datového typu
+    x = "10";
+    console.log(x == 10); //true
+    console.log(x === 10); //false - protože jiný datový typ i když je tam taky 10
+
+    //Větší/menší
+    let vystup;
+    vystup = x < y;
+
+    //Větší/menší nebo rovno
+    z = 10;
+    vystup = x >= z;
+
+    //Nerovnost
+    vystup = x != z; //pokud hodnoty nejsou shodné napíše true
+
+    //Nerovnost datového typu
+    vystup = x !== z; //pokud hodnoty nejsou shodné a nemají stejný datový typ napíše true
+
+    //--------------------------------------------------------------------------------
+    //4. Logické - slouží k logickým operacím (true/false)
+    // &&, ||, !
+
+    //Logické AND - a zároveň
+    vystup = (x < 10) && (y > 1);
+
+    //logické OR - nebo
+    vystup = (x == 5) || (y == 5);
+
+    //logické NOT - negace
+    vystup = !(x == y);
+
+    //--------------------------------------------------------------------------------
+
+    document.getElementById("vystup_x").innerHTML = x;
+    document.getElementById("vystup_y").innerHTML = y;
+    document.getElementById("vystup_z").innerHTML = z;
+    document.getElementById("vystup").innerHTML = vystup;
+</script>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proměnné v Javascriptu</title>
+
+        <style>
+            table, td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Deklarace proměnných</h1>
+        <table>
+            <tr>
+                <th>var</th>
+                <td>Proměnná staršího typu. Užívá se pro starší browsery.</td>
+            </tr>
+            <tr>
+                <th>let</th>
+                <td>
+                    Proměnná novějšího typu. Užívá se pro novější browsery.
+                    <br>
+                    <b>Poznámka:</b> Proměnná deklarovaná pomocí let je viditelná pouze v rámci bloku, ve kterém byla deklarována.
+                    <br>
+                    = lokální Proměnná
+                    <br>
+                    nahrazuje <strong>var</strong>
+                </td>
+            </tr>
+            <tr>
+                <th>const</th>
+                <td>
+                    Globální proměnná<br>
+                    Nelze jí měnit<br>
+                    Nelze jí přiřadit novou hodnotu<br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h1>Typy proměnných</h1>
+        <table>
+            <tr>
+                <th>Datový typ</th>
+                <th>Zápis</th>
+                <th>Popis</th>
+                <th>Ukázka</th>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td id="cele_cislo"></td>
+                <td>Celé číslo</td>
+                <td id="v-cele_cislo"></td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td id="text"></td>
+                <td>Textový řetězec</td>
+                <td id="v-text"></td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td id="desetinne_cislo"></td>
+                <td>Desetinné číslo</td>
+                <td id="v-desetinne_cislo"></td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td id="pravdivost"></td>
+                <td>Pravdivost - true/false</td>
+                <td id="v-pravdivost"></td>
+            </tr>
+            <tr>
+                <td>Array</td>
+                <td id="pole"></td>
+                <td>Pole</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td id="objekt"></td>
+                <td>Objekt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td id="datum"></td>
+                <td>Datum</td>
+                <td id="v-datum"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<script src="P004-promenne.js"></script>

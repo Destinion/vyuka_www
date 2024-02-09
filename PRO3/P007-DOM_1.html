@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Práce s HTML DOM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <div id="prvni"></div>
+    <h1 class="text">Toto je nadpis s class text</h1>
+    <p class="text">Toto je první odstavec s class text</p>
+    <p class="text">Toto je druhý odstavec s class text</p>
+    <div id="druhy"></div>
+
+    <form>
+        <label for="jmeno">Jméno:</label>
+        <input type="text" name="jmeno" value="Jan">
+    </form>
+    <br>
+</body>
+</html>
+
+<script>
+    //struktura DOM:
+    //document - objekt = musí být vždycky!
+    //getElementById - metoda = funkce
+    //"prvni" - parametr
+    //.innerHTML - vlastnost
+
+
+    //---------------
+    //DOM - Elementy HTML
+    
+    document.getElementById("prvni").innerHTML = "Ahoj světe!"; // - najde prvek s id "prvni" a vloží do něj text "Ahoj světe!"
+    document.body.innerHTML += "Toto je obsah stránky."; // - přepíše HTML stránky na text "Toto je obsah stránky."
+    //proměnná s datum
+    const datum = Date();
+    document.getElementById("prvni").innerHTML += datum; // - najde prvek s id "prvni" a vloží do něj datum
+
+    //---------------
+    //DOM - Elementy HTML - vlastnosti
+    document.body.style.backgroundColor = "#ccc"; // - změní barvu pozadí stránky na šedou
+
+    //Ukázky prvků DOM
+    //1. Užití getElementById
+    document.getElementById("druhy").innerHTML = "Toto je ukázka getElementById";
+
+    //2. Užití getElementsByClassName
+    document.getElementsByClassName("text")[0].style.color = "red"; // - změní barvu textu v prvním prvku s class "text" na červenou
+    //[0] - vybere první index s class "text"
+    //změna barvy u všech prvků s class "text"
+    document.getElementsByClassName("text")[1].style.color = "red";
+    
+
+    //3. Užití pomocí názvu prvku odstavec
+    document.getElementsByTagName("p")[1].style.color = "blue"; // - změní barvu textu v prvním prvku "p" na modrou
+    document.body.style.fontFamily = "Cambria"; // - změní font na Cambria
+
+    //4. Užití pomocí name
+    document.getElementsByName("jmeno")[0].style.backgroundColor = "yellow";
+
+</script>

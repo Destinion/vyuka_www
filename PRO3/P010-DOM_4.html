@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - metody a prvky</title>
+</head>
+<body>
+    <h1>Tvorba prvků pomocí JS</h1>
+    <button onclick="vytvorit()">
+        Vytvoř odstavec s textem
+    </button>
+    <p id="1">xxxx</p>
+</body>
+</html>
+<script>
+    function vytvorit(){
+        const paragraf = document.createElement("p"); //Vytvoří proměnnou. která generuje prvek <p>
+        paragraf.innerHTML = "Tohle je generovaný paragraf"; //doplní obsah odstavce
+        document.body.appendChild(paragraf); //appendChild - vytvoří prvek na konec vybraného prvku rodiče (zde body)
+        document.getElementById("1").innerHTML = "";
+    }
+</script>

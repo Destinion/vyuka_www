@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textové operátory v Javascriptu</title>
+</head>
+<body>
+    <p id="ziskani">
+        Toto je vytaženo z odstavce.
+    </p>
+    <p id="nahrazeni">
+        Ahoj světe.
+    </p>
+
+    <p id="spojeni">
+        Ahoj světe.
+    </p>
+    <p id="spojeni_2">
+        Ahoj světe.
+    </p>
+
+    <p id="porovnani">
+        Ahoj světe.
+    </p>
+</body>
+</html>
+
+<script>
+
+    //získání textu do proměnné
+    let ziskani = document.getElementById("ziskani").innerHTML;
+    //Nahrazení pomocí textu
+    document.getElementById("nahrazeni").innerHTML = "Toto je náhradní text.";
+
+    //Spojení textu z proměnné nebo řetězce
+    document.getElementById("spojeni").innerHTML = ziskani + " " + "Toto je náhradní text."; //znak + slouží ke spojení txt řetězců
+    document.getElementById("spojeni_2").innerHTML += "Toto je text z JS."; //znak += slouží k přidání textu na konec
+
+
+    document.getElementById("porovnani").innerHTML = ziskani == "Toto je vytaženo z odstavce."; //porovnání textu
+
+
+
+</script>
