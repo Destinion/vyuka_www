@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Události v odkazech - CSS</title>
+    <style>
+        a{
+            color: black;
+            text-decoration: none; /*odstraňuje podtržení*/
+            cursor: pointer; /*mění kurzor při najetí myší na objekt*/
+        }
+        /*Stavy odkazu*/
+        a.aktivni:link{ /*samotný odkaz*/
+            color: green;
+        }
+        a.aktivni:hover{ /*stav při přejetí myší*/
+            scale: 1.2; /*Škálování prvku - výchozí hodnota je 1.0*/
+            color: red;
+           
+        }
+        a.aktivni:active{ /*stav při klinutí myší*/
+            font-size: 50px;
+        }
+        a.aktivni:visited{
+            /*navštívené odkazy*/
+            color: cyan;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/" class="aktivni">Google</a>
+    <br>
+    <a href="https://skolahostivar.cz/" class="dekorace">Weilovka</a>
+</body>
+</html>
