@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SWITCH - C008</title>
+</head>
+<body>
+	<button onclick="spustit1()">Červená</button>
+	<button onclick="spustit2()">Modrá</button>
+	<button onclick="spustit3()">Zelená</button>
+
+	
+</body>
+</html>
+
+<script>
+		let pomocna = 0;
+		function vysledek(){
+			switch(pomocna){
+				case 1:
+					document.body.style.backgroundColor = "red";
+					break;
+				case 2:
+					document.body.style.backgroundColor = "blue";
+					break;
+				case 3:
+					document.body.style.backgroundColor = "green";
+					break;
+				default:
+					document.body.style.backgroundColor = "white";
+			}
+		}
+		
+		function spustit1() {
+			pomocna = 1;
+			vysledek();
+		}
+		function spustit2() {
+			pomocna = 2;
+			vysledek();
+		}
+		function spustit3() {
+			pomocna = 3;
+			vysledek();
+		}
+	</script>

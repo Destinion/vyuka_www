@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generátor odstavců</title>
+
+    <style>
+        div{
+            width:100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generátor odstavců</h1>
+    <h2>Zadejte hodnoty</h2>
+    <form id="textForm">
+        <input type="text" id="textVstup" placeholder="Zadejte text">
+        <button type="button" onclick="vygenerovat()">Generovat odstavec</button>
+
+
+        
+    </form>
+
+    <div>Tohle je blok</div>
+</body>
+</html>
+
+<script>
+    function vygenerovat() {
+        let textVstup = document.getElementById("textVstup");
+        let inputHodnota = textVstup.value;
+        let paragraf = document.createElement("p");
+
+    
+        paragraf.innerHTML = inputHodnota;
+        document.body.appendChild(paragraf);
+        textVstup.value = "";
+    
+    };
+</script>

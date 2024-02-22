@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM - události</title>
+
+    <style>
+        a:hover {
+            color: red;
+            scale: 1.2;
+        }
+        a:active {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM - události</h1>
+    <h2>Události</h2>
+    <a href="https://www.google.com" onclick="barva_stranky()">Odkaz</a>
+
+    <h2 id="greetings">Vítejte, </h2>
+    <form>
+        <input type="text" name="jmeno" placeholder="Zadej jméno">
+        <button type="button" onclick="odeslat()">Odeslat</button>
+    </form>
+
+    <script>
+        document.body.style.backgroundColor = "#ccc";
+        document.getElementsByName("jmeno")[0].style.fontFamily = "Cambria";
+
+        function barva_stranky() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function odeslat() {
+            const jmeno = document.getElementsByName("jmeno")[0]; //const je typ proměnné co se nemění
+            const ulozeni = jmeno.value; 
+        //Pro příkazy s eventy, kdy chceme zíksávat obsah jiných prvků HTML - které mají jiné datové typy a obsah. Nám value, type a podobné dovolují vybrat přesný obsah
+            document.getElementById("greetings").innerHTML = "Vítejte, " + ulozeni;
+            document.body.style.backgroundColor = "lightblue";
+        }
+        
+        
+    </script>
+</body>
+</html>
+
+

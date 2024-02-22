@@ -1,0 +1,1 @@
+document.getElementById("externi").innerHTML = "Toto je ukázka externí JS";

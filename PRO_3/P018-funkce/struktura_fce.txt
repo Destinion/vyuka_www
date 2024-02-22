@@ -1,0 +1,6 @@
+function nazev_fce(parametr1, parametr2){
+    //kod funkce
+    return vysledek;
+}
+
+nazev_fce(); //volání funkce

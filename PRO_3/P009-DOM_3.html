@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+<body>
+    <button onclick="funkce()">Klikni na mě</button>
+    <h1>Ukázky DOM - událostí/EVENT</h1>
+
+    <h2>Hover - onmouseover & onmouseout</h2>
+    <h3 id="prejeti" onmouseover="prejeti()" onmouseout="odjeti()">Ukázka onmouseover & onmouseout</h3>
+</body>
+</html>
+
+<script>
+    function funkce() {
+        document.body.style.backgroundColor = "#d5d5d5";
+    }
+
+    function prejeti(){
+        document.getElementById("prejeti").style.color = "#fff333"
+    }
+    function odjeti(){
+        document.getElementById("prejeti").style.color = "black";
+    }
+</script>

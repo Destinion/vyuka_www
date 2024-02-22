@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neviditelné prvky</title>
+
+    <style>
+        div#skryty{
+            background-color: red;
+            display: none; /*Skryje prvek*/
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="1" onclick="odkryt()" onmouseover="zvetsit1()" onmouseout="zmensit1()">Klikni na mě</button>
+    <button id="2" onclick="zakryt()" onmouseover="zvetsit2()" onmouseout="zmensit2()">Skryj div</button>
+    <div id="skryty">
+        Ahoj Světe
+    </div>
+</body>
+</html>
+
+<script>
+    function odkryt(){
+        document.getElementById("skryty").style.display = "block";
+    }
+    function zakryt(){
+        document.getElementById("skryty").style.display = "none";
+    }
+
+    function zmensit1(){
+        document.getElementById("1").style.scale = "1.0";
+    }
+    function zvetsit1(){
+        document.getElementById("1").style.scale = "1.2";
+    }
+    function zmensit2(){
+        document.getElementById("2").style.scale = "1.0";
+    }
+    function zvetsit2(){
+        document.getElementById("2").style.scale = "1.2";
+    }
+</script>

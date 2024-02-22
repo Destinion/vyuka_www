@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener - cvičení</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #prvni{
+            background-color: darkkhaki;
+        }
+        #druhy{
+            background-color: fuchsia;  
+        }
+        #treti{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="vymenit">Zamíchat barvy</button>
+    <main>
+        <div id="prvni"></div>
+        <div id="druhy"></div>
+        <div id="treti"></div>
+    </main>
+</body>
+</html>
+<script>
+    //1. při stisknutí tlačítka se barvy vrátí na původní variantu dle CSS
+    //2. Při kliknutí na jakkýkoliv div se barvy posunou o jeden dolů
+    document.querySelectorAll('button').forEach(button => button.addEventListener('click', reset));
+    function reset(){
+        document.getElementById("prvni").style.backgroundColor = "darkkhaki";
+        document.getElementById("druhy").style.backgroundColor = "fuchsia";
+        document.getElementById("treti").style.backgroundColor = "cornflowerblue";
+    };
+
+
+    document.querySelectorAll('div').forEach(button => button.addEventListener('click', posun));
+
+    function posun(){
+        let barva1 = document.getElementById("prvni").style.backgroundColor;
+        let barva2 = document.getElementById("druhy").style.backgroundColor;
+        let barva3 = document.getElementById("treti").style.backgroundColor;
+        document.getElementById("druhy").style.backgroundColor = barva1;
+        document.getElementById("treti").style.backgroundColor = barva2;
+        document.getElementById("prvni").style.backgroundColor = barva3;
+    }
+</script>

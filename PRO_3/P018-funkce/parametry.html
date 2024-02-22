@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="volba('a')">Volba A</button> <!--při kliknutí se do parametru vyber funkce volba nasadí hodnota 'a'-->
+    <button onclick="volba('b')">Volba B</button>
+    <button onclick="volba('c')">Volba C</button>
+</body>
+</html>
+
+<script>
+    function volba(vyber){
+        switch (vyber){
+            case "a":
+                console.log("Volba A");
+                break;
+            case "b":
+                console.log("Volba B");
+                break;
+            case "c":
+                console.log("Volba C");
+                break;
+        }
+    }
+</script>

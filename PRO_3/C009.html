@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SWITCH a parametry funkcí</title>
+</head>
+<body>
+	<button onclick="spustit(1)">Červená</button> <!--parametry/argumenty píšeme do složených závorek k funkci-->
+	<button onclick="spustit(2)">Modrá</button>
+	<button onclick="spustit(3)">Zelená</button>
+
+	
+</body>
+</html>
+
+<script>
+		
+		function spustit(volba){ //při aplikaci funkce píšeme do závorek ne hodnoty, ale proměnnou do které se nám parametry uloží
+			switch(volba){
+				case 1:
+					document.body.style.backgroundColor = "red";
+					break;
+				case 2:
+					document.body.style.backgroundColor = "blue";
+					break;
+				case 3:
+					document.body.style.backgroundColor = "green";
+					break;
+				default:
+					document.body.style.backgroundColor = "white";
+			}
+		}
+	</script>
