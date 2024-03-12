@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obrázky v pozadí</title>
+
+    <style>
+        .obrazek{
+            background-image: url("Milan-Vorel.jpg");
+            /*nepraktické pro menší objekty*/
+        }
+        .reditel{
+            width: 500px;
+            height: 500px;
+
+            background-image: url("Milan-Vorel.jpg");
+            background-position: center; /*posun obrázku na pozadí*/
+            /*zapisuje se slovně - top, left, right, center
+            nebo
+            číselně - 25% 75% etc*/
+            background-repeat: no-repeat; /*opakování obrázku v případě možnosti - no-repeat, repeat, repeat-y*/
+            
+
+            background-size: 500px; /*mění velikost obrázku v pozadí*/
+
+            opacity: 0.5; /* průhlednost obrázku */
+            scale: 1.1; /*škálování prvku i s pozadím*/
+        }
+
+        .reditel:hover{ /*změna obrázku při přejetí myší*/
+            background-image: url("tygr.jpg");
+            scale: 1.0;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus, eos voluptas minima velit totam eaque tempora tempore quia veritatis fugiat harum unde illum consectetur expedita modi distinctio, odio asperiores.</p>
+    <p class="obrazek">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod atque dolores voluptatum nemo aut consectetur. Voluptatem debitis, et non quaerat consectetur facere optio earum sapiente eveniet ea sequi sed harum.</p>
+    <div class="reditel"></div>
+</body>
+</html>

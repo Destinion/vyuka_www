@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylování tabulek</title>
+    <style>
+        table{
+            border: 1px solid black; /*nastavuje ohraničení !POUZE! pro okraj tabulky*/
+            margin: 10px;
+            width: 50vw;
+            height: 500px;
+            empty-cells: hide; /*skrytí prázdných buněk - hide, show*/
+        }
+        td{
+            border: 1px solid red;
+            padding: 10px; /*u buněk je padding výhodný - margin zbytečný*/
+            text-align: center;
+            background-color: green;
+        }
+        th{
+            font-weight: 400;
+            font-size: 42px;
+            color: #ff33a1;
+            vertical-align: bottom; /*zarovnání obsahu vertikálně - bottom, middle, top*/
+            
+        }
+    </style>
+</head>
+<body>
+    <caption>Popis tabulky</caption>
+    <table>
+        <tr>
+            <th colspan="2">Hlavička tabulky</th>
+        </tr>
+        <tr>
+            <td>Buňka tabulky 1</td>
+            <td>Buňka tabulky 2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Buňka tabulky 3</td> <!--Tato buňka je propojená s dalším řádkem, kde je buňka 5-->
+            <td>Buňka tabulky 4</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
