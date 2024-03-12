@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #reklama{
+            height: 100px;
+            width: 90vw;
+            background-color: yellowgreen;
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            /*bonus animace*/
+            transition: all 0.3ms ease-in;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="spustit()">klikni</button>
+    <div id="reklama"></div>
+</body>
+</html>
+
+<script>
+    function spustit(){
+        setTimeout(function (){
+            document.getElementById("reklama").style.display = "block";
+            vratit();
+        },5000)
+    }
+    function vratit(){
+        setTimeout(function (){
+            document.getElementById("reklama").style.display = "none";
+        },5000)
+    }
+</script>
