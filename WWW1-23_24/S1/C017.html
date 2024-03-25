@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C015</title>
+    <style>
+        table{
+            background-color: darkseagreen;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+            background-color: yellowgreen;
+            color: brown;
+        }
+        .barva1{
+            background-color: aqua;
+        }
+        .barva2{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <caption>Seznam osob</caption>
+    <table>
+        <tr>
+            <th>Jméno</th>
+            <th>Věk</th>
+        </tr>
+        <tr class="barva1">
+            <td>Karel</td>
+            <td>126</td>
+        </tr>
+        <tr class="barva2">
+            <td colspan="3">David</td>
+            <td colspan="3">Michael</td>
+            <td colspan="3">Dagmar</td>
+        </tr>
+        <tr class="barva1">
+            <td rowspan="2"><a href="#">David</a></td>
+            <td>22</td>
+        </tr>
+        <tr class="barva2">
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Sophien</td>
+            <td>33</td>
+        </tr>
+    </table>
+</body>
+</html>
