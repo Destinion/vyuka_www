@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulky 2</title>
+    <style>
+        table{
+            border: 2px solid black;
+            empty-cells: hide;
+            border-bottom: 5px solid black;
+        }
+        td{
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 2px;
+        }
+        .modra{
+            color: blue;
+        }
+        td:hover{
+            color: red;
+        }
+        th{
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+        th:hover{
+            color: red;
+        }
+        .kurziva{
+            font-style: italic;
+            background-color: violet;
+        }
+        .velka{
+            text-transform: uppercase;
+        }
+        .tloustka{
+            font-weight: bold;
+            color: aliceblue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="modra">1</th>
+            <th class="tloustka">2</th>
+            <th>3</th>
+        </tr>
+        <tr class="kurziva">
+            <td class="modra">4</td>
+            <td class="velka">slovo</td>
+            <td></td>
+        </tr>
+        <tr class="ramecek">
+            <td class="modra">7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>

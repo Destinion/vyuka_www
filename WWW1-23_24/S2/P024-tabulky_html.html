@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulky v HTML</title>
+</head>
+<body>
+    <!--
+        table - deklaruje oblast tabulky
+
+        tr - deklaruje oblast řádku tabulky (nadřazeno td nebo th)
+
+        td - rozděluje obsah řádku na sloupce
+
+        th - hlavička tabulky
+
+        caption - popis tabulky (dává se před nebo za tabulku)
+
+        "rowspan" - atribut u <td/th>, spojuje buňky přes řádky - udává se v počtu buněk ke spojení (vyžaduje pro funkčnost další řádek tr)
+
+        "colspan" - atribut u <td/th>, spojuje buňky ve sloupci - udává se v počtu buněk ke spojení
+
+        "border" - zastaralý příkaz, nyní v CSS; nastavuje ohraničení tabulky, td, th a tr 
+
+
+    -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <caption>Popis tabulky</caption>
+    <table border="1">
+        <tr>
+            <th>Buňka 1</th>
+            <th>Buňka 2</th>
+        </tr>
+        <tr>
+            <td>Buňka 3</td>
+            <td>Buňka 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Buňka 5</td>
+            <td rowspan="2">Buňka 6</td> <!--Tato buňka je propojená s dalším řádkem, kde je Buňka 7-->
+        </tr>
+        <tr>
+            <td>Buňka 7</td>
+        </tr>
+    </table>
+</body>
+</html>
