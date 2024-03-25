@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Metody</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        .card-container {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 50px;
+            display: inline-block;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            border-radius: 10px;
+            
+        }
+
+        .card .front,
+        .card .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card .front {
+            background-color: #007bff;
+            transform: rotateY(0deg);
+        }
+        
+
+        .card .back {
+            background-color: #ffc107;
+            transform: rotateY(180deg);
+        }
+        .card-container:nth-child(odd) .card .front {
+            background-color: #28a745;
+        }
+        .card-container:nth-child(odd) .card .back {
+            background-color: #a77f28;
+        }
+
+        .card-container.flipped .card {
+            transform: rotateY(180deg);
+        }
+
+        .back code {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #333;
+        }
+        .card-container:first-child .card .front {
+            background-color: #2c312d;
+        }
+        .card-container:first-child .card .back {
+            background-color: #d167df;
+        }
+        .card-container:nth-child(2) .card .front {
+            background-color: #2c312d;
+        }
+        .card-container:nth-child(2) .card .back {
+            background-color: #d167df;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>Deklarace pole</h2>
+            </div>
+            <div class="back">
+                <p>Deklaruje pole</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    let pole = new Array();
+                </code>
+            </div>
+        </div>
+    </div>
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>Naplnění pole</h2>
+            </div>
+            <div class="back">
+                <p>Cyklus for</p>
+                <code>
+                    let pole = [];<br>
+                    for (let i = 0; i < pole.length; i++){<br>
+                        pole[i] = "hodnota";
+                    }
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>length</h2>
+            </div>
+            <div class="back">
+                <p>Vrací počet prvků v poli</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    console.log(pole.length); // Vypíše 3
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>push()</h2>
+            </div>
+            <div class="back">
+                <p>Přidá jednu nebo více položek na konec pole a vrátí novou délku pole.</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    let novaDelka = pole.push(4, 5);<br>
+                    console.log(novaDelka); // Vypíše 5
+                    console.log(pole); // Vypíše [1, 2, 3, 4, 5]
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>shift()</h2>
+            </div>
+            <div class="back">
+                <p>Odstraní první prvek z pole a vrátí ho.</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    let prvniPrvek = pole.shift();<br>
+                    console.log(prvniPrvek); // Vypíše 1
+                    console.log(pole); // Vypíše [2, 3]
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>unshift()</h2>
+            </div>
+            <div class="back">
+                <p>Přidá jednu nebo více položek na začátek pole a vrátí novou délku pole.</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    let novaDelka = pole.unshift(-1, 0);<br>
+                    console.log(novaDelka); // Vypíše 5
+                    console.log(pole); // Vypíše [-1, 0, 1, 2, 3]
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>join()</h2>
+            </div>
+            <div class="back">
+                <p>Spojí všechny prvky pole do řetězce pomocí zadaného oddělovače.</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    let spojenyRetezec = pole.join('-');<br>
+                    console.log(spojenyRetezec); // Vypíše "1-2-3"
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>toString()</h2>
+            </div>
+            <div class="back">
+                <p>Vrátí řetězcovou reprezentaci pole.</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    let retezec = pole.toString();<br>
+                    console.log(retezec); // Vypíše "1,2,3"
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>concat()</h2>
+            </div>
+            <div class="back">
+                <p>Spojí dvě nebo více polí a vytvoří nové pole.</p>
+                <code>
+                    let pole1 = [1, 2];<br>
+                    let pole2 = [3, 4];<br>
+                    let novePole = pole1.concat(pole2);<br>
+                    console.log(novePole); // Vypíše [1, 2, 3, 4]
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>indexOf()</h2>
+            </div>
+            <div class="back">
+                <p>Vrátí první index, na kterém je nalezen zadaný prvek v poli.</p>
+                <code>
+                    let pole = [1, 2, 3, 2, 1];<br>
+                    let index = pole.indexOf(2);<br>
+                    console.log(index); // Vypíše 1
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>lastIndexOf()</h2>
+            </div>
+            <div class="back">
+                <p>Vrátí poslední index, na kterém je nalezen zadaný prvek v poli.</p>
+                <code>
+                    let pole = [1, 2, 3, 2, 1];<br>
+                    let index = pole.lastIndexOf(2);<br>
+                    console.log(index); // Vypíše 3
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>sort()</h2>
+            </div>
+            <div class="back">
+                <p>Seřadí prvky pole podle abecedního nebo numerického pořadí.</p>
+                <code>
+                    let pole = [3, 1, 2];<br>
+                    pole.sort();<br>
+                    console.log(pole); // Vypíše [1, 2, 3]
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container" onclick="otocit(this)">
+        <div class="card">
+            <div class="front">
+                <h2>reverse()</h2>
+            </div>
+            <div class="back">
+                <p>Obrátí pořadí prvků v poli.</p>
+                <code>
+                    let pole = [1, 2, 3];<br>
+                    pole.reverse();<br>
+                    console.log(pole); // Vypíše [3, 2, 1]
+                </code>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function otocit(container) {
+        container.classList.toggle('flipped');
+    }
+</script>
