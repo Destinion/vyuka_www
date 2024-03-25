@@ -1,0 +1,19 @@
+button{
+   /*!important - přebíjí hierarchii CSS*/
+}
+
+p{
+    color: blue;
+}
+
+button#ukazka{
+    background-color: green;
+}
+
+.btn-primary{
+    background-color: yellow;
+}
+
+.paprika{
+    font-family: Verdana;
+}
