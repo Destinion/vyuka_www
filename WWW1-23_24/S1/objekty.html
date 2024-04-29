@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekty v HTML</title>
+    <style>
+        iframe{
+            width: 200px;
+            height: auto;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>iFrame - specifikuje rám, nejčastěji pro mapy nebo náhledy</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.8000941303917!2d14.538400675404597!3d50.05257601593323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b92630201ebd9%3A0x2a89b8e19f42b8!2sWeilova%201270%2F4%2C%20102%2000%20Praha%2015-Hostiva%C5%99!5e0!3m2!1scs!2scz!4v1711452873811!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://skolahostivar.cz/"></iframe>
+
+    <iframe src="https://www.youtube.com/embed/_qSB6jN4A3s?si=KLhrRjkxq72sDrRZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>IMG - obrázek</h1>
+    <img src="Milan-Vorel.jpg" alt="nahrádní text">
+
+    <h1>video</h1>
+    <video width="300px" autoplay muted controls> <!--
+    autoplay - spustí video při načtení stránky
+    muted - video bez zvuku
+    controls - ovládání videa
+    -->
+        <source src="videoukazka.mp4" type="video/mp4"> <!--type - značí typ video souboru-->
+    </video>
+
+
+    <h1>audio</h1>
+    <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
