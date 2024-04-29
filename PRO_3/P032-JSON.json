@@ -1,0 +1,18 @@
+
+{
+    "objekt":[
+    { 
+        
+        "nazev_promenne": "hodnota"
+    },
+    {
+        "cislo": 30
+    },
+    {
+        "pravdivost": true
+    },
+    {
+        "pole": ["Petr", 68, "Pavel"]
+    }
+]
+}

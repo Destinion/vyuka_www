@@ -1,0 +1,17 @@
+{
+    "provider": "Max Dlouhý",
+    "ovoce": [
+        {
+            "nazev": "Banán",
+            "barva": "žlutá",
+            "cena": 32,
+            "dostupnost": true
+        },
+        {
+            "nazev": "Jablko",
+            "barva": "červená",
+            "cena": 69,
+            "dostupnost": true
+        }
+    ]
+}

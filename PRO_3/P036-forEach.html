@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyklus forEach</title>
+
+    <style>
+        .blok{
+            display: inline-block;
+            background-color: #f12ca3;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .obraz{
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!--Pro využití polí pro naplnění stránky obsahem je potřeba několik kritérií:-->
+    <!--1) Vhodný kontejner-->
+    <!--Správně naformátovaná data v JS, která přidáváte pomocí append do kontejneru-->
+
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+    /*Pro aplikaci cyklu forEach je potřeba pole - ten něco provede s každou položkou v poli*/
+
+    let pole = ["jahody", "meloun", "borůvky", "kiwi"];
+
+    /*Nepovinný, ale usnadňuje*/
+    let kontejner = document.getElementById("container");
+
+    /*Aplikace cyklu forEach*/
+    pole.forEach(ovoce => {
+        /*Princip = vytvoří se prvek, který se následně přidá do kontejneru. Tento krok se provede za každý objekt v poli*/
+        let blok = document.createElement("div");
+        
+        
+
+        let obrazek = document.createElement("IMG");
+        obrazek.src = "ovoce.jpg";
+        obrazek.className = "obraz";
+        
+
+        blok.appendChild(obrazek);
+        blok.className = "blok";
+        let obsah = document.createElement("h1");
+        obsah.textContent = ovoce;
+        blok.appendChild(obsah);
+        /* blok.textContent = ovoce.toString(); vkládá text jako string*/
+        kontejner.appendChild(blok); /*přidává na konec proměnné - bloku*/
+    })
+</script>

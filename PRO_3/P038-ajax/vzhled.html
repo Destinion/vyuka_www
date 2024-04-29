@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zpracování požadavků pomocí AJAX</title>
+
+    <!--Připojení knihovny JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#nacistData').click(function (){
+                $.ajax({
+                    url: 'data.php', //URL ze které se načítají data
+                    type: 'GET', //typ metody požadavku (GET, POST, RESET atd.)
+                    dataType: 'json', //typ očekávaných dat
+                    success: function(data){
+                        //spustí se při úspěšném zpracování požadavku
+                        //zde se píše jak se data dále zpracovávají
+                        $('#vystup').html('<p>' + data.message + '</p>');
+                    },
+                    error: function(xhr, status, error){
+                        //funkce se zavolá při selhání požadavku
+                        window.alert('chyba zpracování dat');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="nacistData" onclick="spustit()">Načíst data</button>
+
+    <div id="vystup"></div>
+
+    
+</body>
+</html>

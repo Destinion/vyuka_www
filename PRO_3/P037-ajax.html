@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <div id="ukazka">
+        <h1>Toto je ukázka funkce AJAX</h1>
+        <button onclick="spustit()">Změnit obsah</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function spustit(){
+        //1. krok - vytvořit XMLHttp žádost
+        const xhttp = new XMLHttpRequest();
+        //2. volání AJAX
+        xhttp.onload = function(){
+            //DOM
+            document.getElementById("ukazka").innerHTML = 
+        }
+        xhttp.open
+        xhttp.send();
+    }
+</script>
