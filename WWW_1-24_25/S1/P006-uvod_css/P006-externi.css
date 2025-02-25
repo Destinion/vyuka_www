@@ -1,0 +1,10 @@
+h1{
+	color: green;
+}
+
+p{
+	/* Toto je komentář */
+	color: red; 
+	font-size: 40px; /* mění velikost písma - udává se v pixelech*/
+	font-weight: 900; /*mění tloušťku písma - hodnoty 100 - 900*/
+}

@@ -1,0 +1,19 @@
+/*
+div a span - v základní podobě nemají žádné vlastnosti, ale dají se na ně aplikovat všechny atributy CSS
+*/
+
+div{
+    background-color: blueviolet;
+    color: pink;
+    width: 100px; /* šířka prvku*/
+    height: 100px; /*výška prvku - pokud se nezapíše, nastavuje se dle obsahu*/
+}
+
+.trida{
+    width: 500px;
+    height: 500px;
+}
+
+#unikatni_hodnota{
+    color: red;
+}

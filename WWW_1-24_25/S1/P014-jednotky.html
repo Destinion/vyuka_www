@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolutní a relativní jednotky</title>
+    <style>
+        /*Absolutní jednotky - px => width, height, font-size*/
+        p{
+            font-size: 32px; /*základní velikost písma pro PC je 16px*/
+        }
+
+        /* Relativní jednotky - em, rem - specifické pro font-size */
+        h1{
+            font-size: 5rem; /*rem - mění původní velikost písma prvku dle násobku (16px * 5 zde)*/
+        }
+        span{
+            font-size: 2em; /*em - vezme současnou velikost písma a vynásobí jí danou hodnotou*/
+        }
+
+        /* em - na co si dát pozor */
+        h2{
+            font-size: 5em; /* tato hodnota násobí velikost em z nadřazeného prvku*/
+        }
+
+        /*Relativní jednotky pro velikost prvku - %, vw, vh*/
+        .block-1{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .b1{
+            background-color: burlywood;
+            width: 30%; /* % z velikosti nadřazeného prvku - je potřeba ohlídat max hodnotu celkem 100% */
+            height: 200px;
+        }
+
+        /*vw, vh - udávají % velikost viditelné obrazovky*/
+        .b2{
+            background-color: lightblue;
+            width: 50vw; /*viewport width*/
+            height: 20vh; /*viewport height*/
+        }
+
+        /*Kombinování jednotek*/
+        .block-3{
+            display: flex;
+            justify-content: space-evenly;
+            height: 50vh;
+        }
+        .b3{
+            width: 18%;
+            background-color: deeppink;
+            /*min-width/height - slouží k nastavení minimální velikosti prvku - používá se u relativních jednotek*/
+            min-width: 50px;
+            /*max-width/height - slouží k nastavení maximální velikosti prvku - používá se u relativních jednotek*/
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hlavní nadpis</h1>
+    <span>
+        <h2>Vedlejší nadpis</h2>
+        <p>Toto je ukázkový text uvnitř elementu span.</p>
+    </span>
+
+    <!-- 1. Blok s 3 vnitřními divy -->
+    <div class="block-1">
+        <div class="b1">Blok 1 - Vnitřní 1</div>
+        <div class="b1">Blok 1 - Vnitřní 2</div>
+        <div class="b1">Blok 1 - Vnitřní 3</div>
+    </div>
+
+    <!-- 2. Blok se 2 vnitřními divy -->
+    <div class="block-2">
+        <div class="b2">Blok 2 - Vnitřní 1</div>
+        <div class="b2">Blok 2 - Vnitřní 2</div>
+    </div>
+
+    <!-- 3. Blok s 5 vnitřními divy -->
+    <div class="block-3">
+        <div class="b3">Blok 3 - Vnitřní 1</div>
+        <div class="b3">Blok 3 - Vnitřní 2</div>
+        <div class="b3">Blok 3 - Vnitřní 3</div>
+        <div class="b3">Blok 3 - Vnitřní 4</div>
+        <div class="b3">Blok 3 - Vnitřní 5</div>
+    </div>
+</body>
+</html>

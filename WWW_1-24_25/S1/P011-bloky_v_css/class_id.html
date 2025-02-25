@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikace class a ID</title>
+    <style>
+        /*selektor třídy - píše se .hodnota_class
+        class - může být používána opakovaně a u různých prvků
+        */
+        .barva{
+            color: red;
+        }
+
+        /*Hodnoty ID přebíjejí hodnoty z class*/
+        .font{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*selektor ID*/
+        #hierarchie{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Kombinace selektoru prvku a class*/
+        div.barva{
+            background-color: bisque;
+        }
+        
+        .druha_trida{
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="barva">Třída barva</h1>
+    <p class="barva">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a, sequi laborum nisi aperiam unde ullam officiis fugiat nesciunt, facilis, architecto vel fugit consequatur! Nostrum accusantium ad esse excepturi quidem.</p>
+
+    <div>
+        <h1 id="hierarchie" class="font">Třída font</h1>
+    </div>
+
+    <!--
+        Prvek HTML může mít více class, oddělené mezerou
+    -->
+    <div class="barva druha_trida">
+        Zde je třída barva
+    </div>
+</body>
+</html>

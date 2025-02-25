@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Základní atributy bloků v CSS</title>
+    <style>
+        .text{
+            background-color: darkkhaki; /*Pokud je stejný atribut s rozdílnými hodnotami jak pro selektor prvku, tak pro class -> class přebíjí hodnotu z prvku*/
+            color:aqua;
+            text-align: center; /*zarovnává textový obsah bloku - justify, right, left, center*/
+            text-decoration: line-through; /*nastavuje podtržení textu - none, line-through, solid*/
+            text-transform: uppercase; /*nastavuje kapitálky písmen - uppercase, lowercase, capitalize*/
+            font-size: 30px; /*velikost písma*/
+            font-weight: 900; /*tloušťka písma 100 - 900*/
+            font-style: italic; /*nastavuje zvýraznění písma - italic*/
+            font-family: Arial, sans-serif; /*typ fontu*/
+        }
+        #prvni{
+            /*BORDER - rozepsaný*/
+            border-width: 2px; /*tloušťka ohraničení rámečku*/
+            border-style: solid; /*typ čáry ohraničení rámečku - solid, none*/
+            border-color: red; /*barva rámečku*/
+
+            /*Border-radius - zaoblení okrajů do kruhu*/
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /*je kruhem, pokud width == height*/
+        }
+        #druhy{
+            border-width: 2px 15px 5px 0px; /*rámeček - top right bottom left*/
+        }
+        div{
+            background-color: whitesmoke;
+            width: 300px; /*šířka prvku*/
+            height: 500px; /*výška prvku - pokud se obsah prvku vertikálně nevejde, tak přeteče*/
+
+            /*BORDER*/
+            border: 1px solid black; /*shorthand pro border - tlouˇštka rámečku, typ rámečku, barva rámečku*/
+            border-radius: 5px; /*zaoblení rohů prvku*/
+
+            overflow: hidden; /*hidden - pokud obsah prvku přetéká, tak se přetékající obsah skryje*/
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Nadpis 1</h1> <!--font-size zůstává nezměněna, protože je nastavena až po bloku-->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora veniam nostrum, quaerat labore quibusdam quis ducimus. Natus autem accusantium blanditiis quod inventore perferendis quam modi excepturi ipsam a. Eum, officia.
+    </div>
+    <div class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora veniam nostrum, quaerat labore quibusdam quis ducimus. Natus autem accusantium blanditiis quod inventore perferendis quam modi excepturi ipsam a. Eum, officia.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora veniam nostrum, quaerat labore quibusdam quis ducimus. Natus autem accusantium blanditiis quod inventore perferendis quam modi excepturi ipsam a. Eum, officia.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora veniam nostrum, quaerat labore quibusdam quis ducimus. Natus autem accusantium blanditiis quod inventore perferendis quam modi excepturi ipsam a. Eum, officia.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora veniam nostrum, quaerat labore quibusdam quis ducimus. Natus autem accusantium blanditiis quod inventore perferendis quam modi excepturi ipsam a. Eum, officia.
+    </div>
+    <div id="prvni">
+
+    </div>
+    <div id="druhy">
+
+    </div>
+</body>
+</html>
