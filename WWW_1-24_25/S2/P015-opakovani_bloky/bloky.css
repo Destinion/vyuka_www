@@ -1,0 +1,18 @@
+div{
+    border: 1px solid black;
+}
+.trida{
+    width: 80vw;
+    height: 20vh;
+    background-color: coral;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sloupec{
+    width: 40%; /*% z velikosti nadřazeného prvku*/
+    height: 100%;
+    background-color: yellow;
+}
+#unikat{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,20 @@
+/*
+div a span - v základní podobě nemají žádné vlastnosti, dají se na ně ale nastavit všechny atributy CSS
+*/
+div{
+    background-color: blueviolet;
+    width: 100px; /*šířka prvku*/
+    height: 100px; /*výšku prvku - pokud se nezapíše, nastavuje se dle obsahu*/
+    color: hotpink;
+}
+
+/*class (v css je selektor .nazev) - je možné použít opakovaně a u různých prvků HTML*/
+.trida{
+    width: 500px;
+    height: 500px;
+}
+
+/*id (v css je selektor #nazev) - je možné použít právě jednou u jednoho prvku. Ale lze použít více různých ID*/
+#unikatni_hodnota{
+    font-family: Verdana, sans-serif;
+}

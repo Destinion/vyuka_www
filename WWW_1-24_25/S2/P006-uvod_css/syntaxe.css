@@ -1,0 +1,19 @@
+h1{
+	color: red;
+}
+
+p{
+	/* Toto je komentář */
+	color: green;
+	font-size: 40px; /* mění velikost písma - udává se v pixelech */
+	font-weight: 900; /*mění tloušťku písma - hodnoty jsou 100 - 900*/
+	
+}
+
+/*
+body = celé viditelné tělo dokumentu
+- hodnoty jsou dědičné -> pokud je následně u prvků nezměním, tak se přebírají z body
+*/
+body{
+	color: blue;
+}

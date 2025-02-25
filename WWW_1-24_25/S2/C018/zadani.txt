@@ -1,0 +1,7 @@
+Vytvořte složku "obrazky" ve stejném adresáři jako váš HTML dokument. Poté vytvořte odkaz na soubor "obrazek.jpg" v této složce.
+
+Vytvořte složku "dokumenty" ve stejném adresáři jako váš HTML dokument. Poté vytvořte odkaz na soubor "informace.pdf" v této složce.
+
+Vytvořte složku "stranky" ve stejném adresáři jako váš HTML dokument. Vytvořte odkaz na soubor "kontakt.html" v této složce.
+
+Vytvořte odkaz na soubor "faq.html" v nadřazeném adresáři (o úroveň výše) než je váš aktuální HTML dokument.

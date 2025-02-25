@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stavy odkazů pomocí CSS</title>
+    <style>
+        a:hover{
+            /*Stav odkazu při přejetí myší - nepoužívá se u mobilů*/
+            font-size: 1.1em;
+        }
+        a:visited{
+            /*Stav odkazu po kliknutí - není příliš používán z pohledu UI u menších webů*/
+            color: #ff44ca;
+        }
+        a:link{
+            /*defaultní stav odkazu - dá se nahradit čistě písmenem a*/
+            font-weight: 900;
+            text-decoration: none;
+        }
+        a:active{
+            /*Stav odkazu při kliknutí nebo po dobu kliknutí - časté užití u CTA tlačítek*/
+            opacity: 0.5;
+        }
+
+        /*Stavy odkazů fungují na všechny prvky HTML*/
+        h1:hover{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stavy odkazů</h1>
+    <a href="https://skolahostivar.cz/">
+        Odkaz bez stavových jevů
+    </a><br>
+    <a href="https://www.netflix.com/cz/">Druhý odkaz</a>
+</body>
+</html>
