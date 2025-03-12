@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrázky v pozadí prvků HTML</title>
+    <style>
+        div{
+            width: 50vw;
+            height: 50vh;
+            border: 5px solid black;
+
+            /*Obrázek v pozadí prvku*/
+            background-image: url("obrazky/kytka.webp");
+
+            /*Pozicování obrázku na pozadí*/
+            background-position: center; /*udává se slovně center, left, bottom, top, right nebo číselně jako kombinace pixelů Levé strany a horní strany*/
+
+            /*shorthand pro obrázky v pozadí je background*/
+        }
+
+        body{
+            background-image: url("obrazky/Cat03.jpg");
+
+            background-repeat: repeat-y; /* pozadí se obecně duplikuje aby vyplnilo celý prvek - pomocí no-repeat, repeat-x nebo repeat-y mohu nastavit způsob duplikace*/
+            background-position: top;
+        }
+
+        .vektor{
+            background-position: top;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='500' height='600' preserveAspectRatio='none' viewBox='0 0 500 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1023%26quot%3b)' fill='none'%3e%3crect width='500' height='600' x='0' y='0' fill='rgba(81%2c 46%2c 95%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c209.429C38.963%2c209.207%2c71.658%2c183.571%2c104.551%2c162.685C137.62%2c141.688%2c175.551%2c123.235%2c191.848%2c87.614C208.149%2c51.986%2c206.532%2c8.671%2c191.586%2c-27.546C177.929%2c-60.641%2c136.588%2c-71.055%2c114.685%2c-99.375C90.793%2c-130.267%2c95.491%2c-186.751%2c58.584%2c-199.518C22.172%2c-212.113%2c-11.269%2c-172.558%2c-45.443%2c-154.765C-72.863%2c-140.489%2c-97.25%2c-124.308%2c-121.843%2c-105.577C-153.087%2c-81.781%2c-199.239%2c-68.074%2c-209.159%2c-30.073C-219.005%2c7.644%2c-188.025%2c43.1%2c-169.626%2c77.466C-152.328%2c109.775%2c-134.246%2c141.378%2c-105.32%2c163.881C-74.507%2c187.853%2c-39.039%2c209.652%2c0%2c209.429' fill='%233a2144'%3e%3c/path%3e%3cpath d='M500 874.74C553.116 877.8340000000001 606.795 864.587 651.405 835.591 695.888 806.677 725.602 761.3489999999999 748.256 713.375 771.137 664.921 790.04 612.431 781.787 559.485 773.577 506.81600000000003 743.547 458.745 703.143 423.976 665.5889999999999 391.65999999999997 614.312 386.447 566.336 374.081 520.05 362.15 474.225 343.078 427.448 352.911 378.847 363.127 331.56 388.69 303.129 429.40999999999997 275.675 468.731 289.03499999999997 521.483 277.284 567.978 263.669 621.847 211.378 671.105 228.702 723.898 245.833 776.1030000000001 311.499 791.891 359.52 818.591 404.505 843.6030000000001 448.616 871.7470000000001 500 874.74' fill='%23683b7a'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1023'%3e%3crect width='500' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aut temporibus excepturi praesentium ipsa, reprehenderit consectetur ipsum eius odio alias nobis dolor? Autem at corrupti itaque voluptates vero dolorum iusto?
+    </div>
+
+    <div class="vektor">
+
+    </div>
+</body>
+</html>
