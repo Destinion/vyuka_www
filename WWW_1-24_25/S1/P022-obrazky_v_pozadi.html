@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrázky v pozadí</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            border: 5px solid black;
+
+            /* Obrázek v pozadí prvku */
+            background-image: url("obrazky/kytka.webp");
+
+            /*Pozicování obrázku na pozadí*/
+            background-position: center; /* udává se slovně center, left, bottom, top, right nebo číselně jako kombinace pixelů Levé a horní strany*/
+
+            /*shorthand pro obrázky v pozadí background*/
+        }
+        div:hover{
+            background-image: url("obrazky/logo-SOSAIG-1.jpg");
+        }
+
+        body{
+            background-image: url("obrazky/Cat03.jpg");
+            background-repeat: repeat-y;
+            /*
+            pozadí se obecně duplikuje aby vyplnilo celý prvek - pomocí no-repeat, repeat-x nebo repeat-y mohu nastavit způsob duplikace
+            */
+            background-position: top;
+        }
+        .vektor{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M720 685.86C825.74 685.65 918.46 627.89 996.25 556.25 1078.19 480.8 1158.87 391.38 1160.67 280 1162.48 167.43 1087.44 71.68 1005.29-5.29 926.28-79.35 828.26-130.52 720-132.93 609.3-135.41 497.91-98.62 421.65-18.35 346.99 60.22 323.8 171.68 327.74 280 331.55 383.97 370.34 482.54 442.66 557.34 516.27 633.5 614.09 686.06 720 685.86' fill='rgba(186%2c 200%2c 215%2c 1)'%3e%3c/path%3e%3cpath d='M720 542.61C788.42 542.48 848.41 505.1 898.75 458.75 951.77 409.93 1003.98 352.07 1005.14 280 1006.31 207.16 957.75 145.21 904.6 95.4 853.47 47.48 790.05 14.37 720 12.81 648.37 11.2 576.3 35.01 526.95 86.95 478.64 137.79 463.63 209.91 466.19 280 468.65 347.28 493.75 411.05 540.55 459.45 588.18 508.73 651.47 542.75 720 542.61' fill='rgba(153%2c 19%2c 199%2c 1)'%3e%3c/path%3e%3cpath d='M720 399.37C751.1 399.31 778.37 382.32 801.25 361.25 825.35 339.06 849.08 312.76 849.61 280 850.14 246.89 828.07 218.73 803.91 196.09 780.67 174.31 751.84 159.26 720 158.55 687.44 157.82 654.68 168.64 632.25 192.25 610.29 215.36 603.47 248.14 604.63 280 605.75 310.58 617.16 339.57 638.43 361.57 660.08 383.97 688.85 399.43 720 399.37' fill='%23488fdb'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo vel nemo molestias repellendus ducimus consectetur iure aspernatur perferendis nobis, voluptatem atque, sunt unde nulla provident quis laboriosam labore cupiditate quia?
+    </div>
+    <div class="vektor"></div>
+</body>
+</html>
