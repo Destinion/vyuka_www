@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            height: 100px;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        button{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nákup</h1>
+    <span>Počet nakoupených položek je: </span><strong id="vypis">0</strong>
+
+    <div>
+        <button onclick="pridat(1)">+1</button>
+        <button onclick="pridat(3)">+3</button>
+        <button onclick="pridat(5)">+5</button>
+    </div>
+    <div>
+        <button onclick="pridat(-1)">-1</button>
+        <button onclick="pridat(-3)">-3</button>
+        <button onclick="pridat(-5)">-5</button>
+    </div>
+</body>
+</html>
+
+<script>
+    let vstup = 0;
+
+    function pridat(a){
+        
+        vstup += a; // vstup = vstup + a
+        document.getElementById("vypis").innerText = vstup;
+    }
+</script>

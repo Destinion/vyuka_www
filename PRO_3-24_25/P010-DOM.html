@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - události</title>
+</head>
+<body>
+    <h1 id="nadpis">Nadpis</h1>
+
+    <p>
+        Události slouží k identifikaci interakcí uživatele na naší stránce. Používají se v kombinaci s funkcemi k volání JS kodu
+    </p>
+
+    <button onclick="barva()">Klikni na mě</button>
+    <button onclick="barva_zpet()">Barva zpět</button>
+
+    <script>
+        function barva(){
+            document.getElementById("nadpis").style.color = "red";
+        };
+
+        function barva_zpet(){
+            document.getElementById("nadpis").style.color = "black";
+        }
+    </script>
+</body>
+</html>

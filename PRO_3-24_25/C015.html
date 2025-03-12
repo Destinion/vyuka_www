@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C015 - Diskuzní forum</title>
+</head>
+<body>
+    <main id="forum">
+        <h1>Placatá Země</h1>
+        <!--Zde se bude generovat obsah z frm-->
+    </main>
+    <form>    
+        <textarea id="obsah" cols="30" rows="10"></textarea>
+        <input type="text" placeholder="Zadej nickname" id="nickname">
+        <button onclick="odeslat()">Odeslat</button>
+    </form>
+
+    <script>
+        function odeslat(){
+            const blok = document.createElement("div");
+            let obsah = document.getElementById("obsah").value;
+            let podpis = document.getElementById("nickname").value;
+
+            const obsah_v = document.createElement("p");
+            const podpis_v = document.createElement("h3");
+
+            obsah_v.innerHTML = obsah;
+            podpis_v.innerHTML = podpis;
+
+            //přidání obsahu do bloku - blok
+            blok.appendChild(obsah_v);
+            blok.appendChild(podpis_v);
+
+            //vystup
+            document.getElementById("forum").appendChild(blok);
+        }
+    </script>
+</body>
+</html>

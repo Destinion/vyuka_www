@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM - Document Object Modeling</title>
+</head>
+<body>
+    <h1 id="selektor">DOM - Document Object Modeling</h1>
+
+
+    <script>
+        //DOM - funguje na principu struktury oddělené .
+        //document.selektor.atribut.subatribut(pokud je třeba) = "hodnota atributu";
+        document.body.style.backgroundColor = "#eb7cc4";
+
+        document.getElementById("selektor").innerText = "DOM - Nový text";
+        document.getElementById("selektor").innerText += " - Document Object Modeling";
+    </script>
+</body>
+</html>

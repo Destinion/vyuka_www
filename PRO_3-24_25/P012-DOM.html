@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Interaktivní obsah</title>
+</head>
+<body>
+    <h1>Generativní obsah</h1>
+    <div id="hlavni">
+
+    </div>
+    <button onclick="pridat()">Přidat DIV</button>
+
+    <script>
+        function pridat(){
+            //document.createElement("nazev_prvku") - vytvoří nový prvek HTML
+            const dite = document.createElement("div");
+            dite.innerHTML = "Nový blok";
+            document.getElementById("hlavni").appendChild(dite); //removeChild - odstraní prvek
+        }
+        
+    </script>
+</body>
+</html>

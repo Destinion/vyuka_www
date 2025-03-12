@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C028</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #e31cb5;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        let pocet = prompt("Zadej počet bloků");
+        pocet = Number(pocet);
+
+        if (pocet > 0){
+            spustit();
+        } else{
+            console.log("Špatná hodnota");
+            alert("Špatná hodnota"); //Pop-up okno pro výstrahu
+        }
+
+        function spustit(){
+            let blok = 0;
+            let novyDiv;
+            while(blok < pocet){
+                novyDiv = document.createElement("div");
+                document.body.appendChild(novyDiv);
+                blok++;
+            }
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="prvni" onmouseover="prvni()" onmouseout="odjezd()"></div>
+    <div id="druhy" onmouseover="druhy()" onmouseout="odjezd()" onclick="vystraha()"></div>
+    <div id="treti" onmouseover="treti()" onmouseout="odjezd()"></div>
+
+    <script>
+        function vystraha(){
+            alert("Byla vystřelena atomovka na Hiroshimu!");
+        }
+        function odjezd(){
+            document.getElementById("prvni").style.backgroundColor = "#c6c6c6";
+            document.getElementById("treti").style.backgroundColor = "#c6c6c6";
+            document.getElementById("druhy").style.backgroundColor = "#c6c6c6";
+        }
+
+        function prvni(){
+            document.getElementById("prvni").style.backgroundColor = "#aa442d";
+            document.getElementById("treti").style.backgroundColor = "#c1ffff";
+            document.getElementById("druhy").style.backgroundColor = "blue";
+        }
+
+        function druhy(){
+            document.getElementById("prvni").style.backgroundColor = "red";
+            document.getElementById("treti").style.backgroundColor = "pink";
+            document.getElementById("druhy").style.backgroundColor = "orange";
+        }
+
+        function treti(){
+            document.getElementById("prvni").style.backgroundColor = "maroon";
+            document.getElementById("treti").style.backgroundColor = "black";
+            document.getElementById("druhy").style.backgroundColor = "purple";
+        }
+    </script>
+</body>
+</html>

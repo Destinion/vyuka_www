@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Elementy HTML</title>
+</head>
+<body>
+    <h1>DOM - Elementy HTML</h1>
+    <p id="selektorid">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque tenetur, magnam quo totam corporis incidunt veniam sint itaque, fugiat, maxime impedit vel non sunt quod! Hic porro nulla dolores.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque tenetur, magnam quo totam corporis incidunt veniam sint itaque, fugiat, maxime impedit vel non sunt quod! Hic porro nulla dolores.
+    </p>
+    <h2 class="trida">První text</h2>
+    <h2 class="trida">Druhý text</h2>
+
+    <script>
+        
+        //Selektor ID
+        document.getElementById("selektorid").style.fontSize = "25px";
+
+        //Selektor BODY
+        //document.body.innerText += "Toto je text dodaný pomocí JS";
+
+        //Selektor Prvků - globálně bez úprav
+        let vyber = document.getElementsByTagName("p");
+        for (let i = 0; i < vyber.length; i++){
+            vyber[i].style.color = "red";
+        }
+
+        //Selektor Class - globálně
+        let trida = document.getElementsByClassName("trida");
+        for (let i = 0; i < trida.length; i++){
+            trida[i].style.color = "blue";
+        }
+
+        //Query selektor - vybírá všechny prvky co sdílí třídu nebo id
+        const promenna = document.querySelectorAll("h2.trida");
+
+
+    </script>
+</body>
+</html>
