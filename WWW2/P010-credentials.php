@@ -1,0 +1,3 @@
+<?php
+    $prihlasen = True;
+?>

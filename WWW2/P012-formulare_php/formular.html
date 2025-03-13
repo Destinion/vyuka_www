@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář s daty</title>
+</head>
+<body>
+    <form action="vystup.php" method="get">
+        <!--
+            action - udává URL PHP skriptu, # je pro stejnou stránku
+            method - způsob zpracování dat: GET / POST
+        -->
+        <!--
+            pro odeslání dat je potřeba mít input type="submit"
+
+            pro zpracování dat musí mít prvky atribut name
+        -->
+        <label for="jmeno">Jméno</label>
+        <input type="text" name="jmeno">
+        <br>
+        <label for="heslo">Heslo</label>
+        <input type="password" name="heslo">
+        <br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

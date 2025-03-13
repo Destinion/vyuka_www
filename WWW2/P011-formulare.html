@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláře v HTML</title>
+</head>
+<body>
+    <form>
+        <!--Základní prvek formuláře - input -->
+        <!--
+            Základní atributy:
+            1. required - pole musí být vyplněno
+            2. placeholder - dočasný text uvnitř pole
+            3. value - předvyplní hodnotu pole
+            4. min a max - pro čísla a datum; omezí nejnižší a nejvyšší zadavatelnou hodnotu
+            5. pattern - stanovuje regulární výraz pro ověření vstupu (=> nesedí dle vzoru, nejde odeslat!)
+        -->
+        
+        <input type="text" required> <!--Vytváří editovatelné textové pole o 255 znacích-->
+        <br>
+
+        <input type="email" value="@gmail.com"> <!--Vstup emailu - dříve s  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"-->
+        <br>
+        
+        <input type="password" placeholder="Dočasný text"> <!--Heslo-->
+        <br>
+
+        <input type="number" min="0" max="65" value="10"> <!--Číselný vstup, text není povolen-->
+        <br>
+
+        <input type="date"> <!-- Vstup je datum/čas -->
+        <br>
+
+        <!--
+            Pro checkboxy necháváme uživatele vybírat více položek!!!
+        -->
+        <label for="sport">Sport</label> <!--Nepovinný, slouží jako prvek k identifikaci inputu. nic nedělá, jen ukazuje vnitřní obsah-->
+        <input type="checkbox" value="sport"> <!--Zaškrtávací pole - bez value nemá hodnotu-->
+        <label for="hudba">Hudba</label>
+        <input type="checkbox" value="hudba">
+        <label for="cestovani">Cestování</label>
+        <input type="checkbox" value="cestovani">
+        <br>
+
+        <label for="muz">Muž</label>
+        <input type="radio" value="muz" name="pohlavi"> <!--Jeden výběr z hodnot, povinně valuze pro určení hodnoty. Stejná hodnota u atributu name spojuje radio buttony dohromady - jinak jsou k ničemu-->
+        <label for="zena">Žena</label>
+        <input type="radio" value="zena" name="pohlavi">
+
+        <br>
+
+        <!--Výběrový seznam = select - option(s)-->
+        <select name="" id="">
+            <option value=""></option> <!--Good practice - nutí uživatele vybrat-->
+            <option value="Praha">Praha</option>
+            <option value="Plzen">Plzeň</option>
+            <option value="Jihlava">Jihlava</option>
+        </select>
+
+        <br>
+        <textarea cols="30" rows="10"></textarea> <!--Slouží k zápisu většího množství textu - cols = sloupce, rows = řádky-->
+
+        <br>
+        <!--Sběr dat z formuláře-->
+        <input type="submit" value="Send">
+        <button type="submit">Odeslat btn</button>
+        <button type="reset">Vymazat obsah frm</button>
+
+    </form>
+</body>
+</html>

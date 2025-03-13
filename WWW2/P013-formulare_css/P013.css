@@ -1,0 +1,30 @@
+.textovy_vstup{
+    background-color: aqua;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+/*prvek, který je aktivní - uživatel do něj třeba píše*/
+input[type="text"]:focus{
+    background-color: #184e83;
+}
+
+input[type="text"]:hover{
+    width: 90%;
+}
+
+input[type="text"]:disabled{
+    background-color: gray;
+}
+
+input[type="submit"]:hover{
+    background-color: #f4c1e2;
+    color: white;
+    font-weight: 900;
+}

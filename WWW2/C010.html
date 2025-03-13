@@ -1,0 +1,30 @@
+<!-- Vytvořte formulář obsahující tyto pole:
+
+nickname
+heslo
+rozevírací seznam - beginner, intermediate, expert
+tlačítko na submit
+
+data odešlete vhodnou metodou do C010.php a nechte zde vypsat pomocí echo ve formátu: Váš nick je <strong>xxx</strong> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C010</title>
+</head>
+<body>
+    <form action="C010.php" method="post">
+        <input type="text" name="nickname">
+        <input type="password" name="heslo">
+        <select name="uroven">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+        </select>
+        <input type="submit">
+    </form>
+</body>
+</html>
