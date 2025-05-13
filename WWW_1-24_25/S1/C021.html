@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulka Odjezdů z Prahy - Hlavní nádraží</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 2em;
+            padding: 10px;
+        }
+
+        th {
+            padding: 15px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+            text-align: center;
+        }
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        
+
+        .blue-row {
+            background-color: #003366;
+            color: white;
+        }
+
+        .light-gray-row {
+            background-color: #f9f9f9;
+        }
+
+        th {
+            font-size: 1.2em;
+        }
+
+        td:hover {
+            background-color: #d1d1d1;
+        }
+
+        td {
+            font-size: 1em;
+        }
+        .uvod{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Praha - Hlavní nádraží</caption>
+
+        <thead>
+            <tr class="blue-row">
+                <th colspan="4" class="uvod">Odjezdy vlaků</th>
+            </tr>
+            <tr class="blue-row">
+                <th>Vlak</th>
+                <th>Destinace</th>
+                <th>Odjezd</th>
+                <th>Nástupiště</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="light-gray-row">
+                <td>R 101</td>
+                <td>Brno</td>
+                <td>08:00</td>
+                <td>S4</td>
+            </tr>
+            <tr class="light-gray-row">
+                <td>IC 123</td>
+                <td>Ostrava</td>
+                <td>08:15</td>
+                <td>S2</td>
+            </tr>
+            <tr class="light-gray-row">
+                <td>R 202</td>
+                <td>Plzeň</td>
+                <td>08:30</td>
+                <td>J3</td>
+            </tr>
+            <tr class="light-gray-row">
+                <td>IC 456</td>
+                <td>Bratislava</td>
+                <td>09:00</td>
+                <td>S1</td>
+            </tr>
+            <tr class="light-gray-row">
+                <td>EC 789</td>
+                <td>Vídeň</td>
+                <td>09:15</td>
+                <td>J5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

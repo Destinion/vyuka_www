@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekty v HTML</title>
+    <style>
+        iframe{
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>iFrame - vložený náhled obsahu - primární užití na mapy a bannery</h1>
+    <iframe src="https://skolahostivar.cz" frameborder="0"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.800639507059!2d14.5404306!3d50.052565799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9263c489c76b%3A0x5cb11a8de14dd23!2zU3TFmWVkbsOtIMWha29sYSBhdXRvbW9iaWxuw60gYSBpbmZvcm1hdGlreQ!5e0!3m2!1scs!2scz!4v1744278540574!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>audio</h1>
+    <audio controls> <!-- controls - dovoluje ovládat audio -->
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg" type="audio/ogg">
+    </audio>
+
+    <h1>Video</h1>
+    <video width="400px" controls autoplay muted loop>
+        <!--
+            autoplay - spustí video při načtení stránky (nelze na některých prohlížečích)
+            muted - video bez zvuku
+            controls - ovládání videa
+            loop - nekonečné video
+        -->
+        <source src="../videoukazka.mp4" type="video/mp4">
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JeNS1ZNHQs8?si=kcrRglZ6LIuuw3G2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Cvičení č. 1:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114084.10333042596!2d-80.12047008051728!3d26.67638112949754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d62b565f5441%3A0xdfe06cce855176be!2sPalm%20Beach%20International%20Airport!5e0!3m2!1scs!2scz!4v1744280188890!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

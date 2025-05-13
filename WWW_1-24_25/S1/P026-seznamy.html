@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznamy</title>
+    <style>
+        ul{
+            list-style-type: circle; /*nastavuje typ odrážky - none*/
+        }
+        ol{
+            list-style-type: lower-roman;
+        }
+        .obrazky{
+            list-style-image: url(obrazky/malakocka.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>Číslované seznamy</h1>
+    <ol start="5" reversed>
+        <!--
+        start - nastavuje počáteční hodnotu
+        reversed - počítá od nejvyšší po nejnižší
+        -->
+        <li>Položka</li>
+        <li>Rajče</li>
+        <li>Okurka</li>
+        <li value="9">Mrkev</li>
+    </ol>
+
+    <h1>Nečíslované/neorganizované seznamy</h1>
+    <ul>
+        <li>Položka</li>
+        <li>Rajče</li>
+        <li>Okurka</li>
+        <li>Mrkev</li>
+    </ul>
+
+    <h1>Seznam s obrázky</h1>
+    <ul class="obrazky">
+        <li>Položka</li>
+        <li>Položka</li>
+        <li>Položka</li>
+    </ul>
+</body>
+</html>

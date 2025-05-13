@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úpravy tabulek pomocí CSS</title>
+    <style>
+        table{
+            /*border: 1px solid black; - nastavuje ohraničení okolo tabulky */
+            background-color: #f2a8e5;
+            width: 500px;
+            height: 500px;
+
+            margin: 50px;
+            empty-cells: hide; /* skryje/odkryje prázdné buňky - hide/show */
+            border-collapse: collapse; /*skryje žlábek(gutter) mezi td a th - collapse
+            !! nelze kombinovat empty-cells s border-collapse !!
+            */
+        }
+        tr{
+            
+        }
+        td{
+            border: 1px solid black; /*nastavuje ohraničení jednotlivých buněk*/
+            padding: 15px;
+
+            text-align: center; /*horizontální zarovnání textu - left, right, center*/
+            font-weight: 700;
+            font-style: italic; /* italic/none */
+            font-size: 20px;
+
+            vertical-align: middle; /*vertikální zarovnání obsahu buňky - top, middle, bottom*/
+        }
+        .prazdna{
+            background-color: #33addd;
+        }
+        .spojeni{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Buňka 1</td>
+            <td>Buňka 2</td>
+            <td>Buňka 3</td>
+        </tr>
+        <tr>
+            <td>Buňka 4</td>
+            <td>Buňka 5</td>
+            <td class="prazdna"></td>
+        </tr>
+        <tr>
+            <td class="spojeni">Buňka 6</td>
+            <td class="spojeni">Buňka 7</td>
+            <td class="spojeni">Buňka 8</td>
+        </tr>
+    </table>
+</body>
+</html>
