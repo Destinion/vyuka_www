@@ -1,0 +1,22 @@
+[
+    {
+        "jmeno": "Jan",
+        "vek": 19,
+        "dovednosti": ["programování", "grafika", "plavání"],
+        "automobil": {
+            "spz": "1234abcd",
+            "barva": "červená"
+        },
+        "manzelka": null
+    },
+    {
+        "jmeno": "David",
+        "vek": 31,
+        "dovednosti": ["programování", "plavání"],
+        "automobil": {
+            "spz": "abcd1234",
+            "barva": "červená"
+        },
+        "manzelka": null
+    }
+]

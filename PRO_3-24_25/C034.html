@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pomocna">Ahoj světe!</h1>
+</body>
+</html>
+
+<script>
+    function barva1(){
+        document.getElementById("pomocna").style.color = "white";
+        document.body.style.backgroundColor = "red";
+        setTimeout (function(){
+            barva2();
+        }, 5000);
+    };
+
+    function barva2(){
+        document.getElementById("pomocna").style.color = "black";
+        document.body.style.backgroundColor = "blue";
+        setTimeout (function(){
+            barva1();
+        }, 5000);
+    };
+
+    setTimeout (function (){
+        barva1();
+    }, 5000);
+
+
+</script>

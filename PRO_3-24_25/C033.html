@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vytvoření bloků</title>
+  <style>
+    .block {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Zadejte počet bloků:</h2>
+  <input type="number" id="numBlocks" min="1" placeholder="Počet bloků">
+  <button onclick="createBlocks()">Vytvořit bloky</button>
+
+  <div id="blocksContainer"></div>
+
+  <script>
+    function createBlocks() {
+      const container = document.getElementById('blocksContainer');
+      container.innerHTML = ''; // Vymaže předchozí bloky
+
+      const numBlocks = parseInt(document.getElementById('numBlocks').value);
+      
+      if (isNaN(numBlocks) || numBlocks < 1) {
+        alert("Prosím zadejte platný počet bloků.");
+        return;
+      }
+
+      let i = 0;
+      while (i < numBlocks) {
+        const block = document.createElement('div');
+        block.classList.add('block');
+        container.appendChild(block);
+        i++;
+      }
+    }
+  </script>
+
+</body>
+</html>
