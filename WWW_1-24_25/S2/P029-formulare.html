@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláře</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            background-color: aqua;
+        }
+        .pismo{
+            color: red;
+        }
+        input[type="number"]{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" class="pismo"> <!--Vstupní data do formuláře-->
+        <input type="number" min="0" max="10">
+        <input type="email">
+        <input type="password" placeholder="Zadej heslo">
+        <input type="date">
+        <input type="file">
+
+        <div class="vyber">
+            <input type="checkbox">Muž
+            <br>
+            <input type="checkbox">Žena
+        </div>
+        <div class="volba">
+            <input type="radio" name="nazev">Auto
+            <br>
+            <input type="radio" name="nazev">Kolo
+        </div>
+
+        <input type="submit"> <!--odeslání frm-->
+        <button>Tlačítko</button>
+    </form>
+</body>
+</html>

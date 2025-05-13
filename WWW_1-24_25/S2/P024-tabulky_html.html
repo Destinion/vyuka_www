@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulky v HTML</title>
+</head>
+<body>
+    <!--table - deklaruje oblast tabulky-->
+    <table border="1">
+        <!--tr - table row => stanovuje řádek tabulky-->
+        <tr>
+            <!-- td - table divide => dělí řádek na jednotlivé buňky-->
+            <td>Buňka 1</td>
+            <td>Buňka 2</td>
+            <td>Buňka 3</td>
+        </tr>
+        <tr>
+            <td>Buňka 4</td>
+            <td>Buňka 5</td>
+        </tr>
+        <tr>
+            <td>Buňka 6</td>
+            <td>Buňka 7</td>
+            <td>Buňka 8</td>
+        </tr>
+    </table>
+
+    <h1>Úpravy obsahu tabulky v HTML</h1>
+    
+    <table border="1">
+        <caption>Popis tabulky</caption> <!--Popis tabulky-->
+        <tr>
+            <!--
+                th - stejně jako td deklaruje oblast buňky, ale nastavuje jí i tučnost -> používá se k deklaraci oblasti headeru tabulky
+            -->
+            <th>Buňka 1</th>
+            <th>Buňka 2</th>
+            <th colspan="3">Buňka 3</th> 
+            <!--
+                pokud colspan nemá další buňky v jiných řádcích, se kterými se může porovnat a dle nich spojit obsah buňky, tak se neprojeví
+            -->
+        </tr>
+        <tr>
+            <td>Buňka 4</td>
+            <td colspan="2" rowspan="2">Buňka 5</td>
+            <!-- colspan - číselně udává počet buněk ke spojení v řádku-->
+        </tr>
+        <tr>
+            <td>Buňka 6</td>
+            <td>Buňka 7</td>
+            <td>Buňka 8</td>
+        </tr>
+    </table>
+</body>
+</html>

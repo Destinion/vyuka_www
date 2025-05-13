@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .mrizka {
+            display: grid;
+            grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        img{
+            width: 200px;
+        }
+        .hlavni{
+            /*
+            grid-column: zacatek/konec;
+            grid-row: zacatek/konec
+            */
+            grid-area: 1 / 2 / 1 / 4; /**/
+        }
+        .vedlejsi{
+            background-color: green;
+            grid-area: 2 / 2/ 2 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="mrizka">
+        <div class="hlavni">
+            <div class="radek1">
+                <img src="../obrazky/Cat03.jpg" alt="kočka">
+                <img src="../obrazky/Cat03.jpg" alt="kočka">
+                <img src="../obrazky/Cat03.jpg" alt="kočka">
+            </div>
+            <div class="radek">
+                <img src="../obrazky/mario.png" alt="mario">
+                <img src="../obrazky/mario.png" alt="mario">
+                <img src="../obrazky/mario.png" alt="mario">
+            </div>
+            <div class="radek">
+                <img src="../obrazky/kytka.webp" alt="kytka">
+                <img src="../obrazky/kytka.webp" alt="kytka">
+                <img src="../obrazky/kytka.webp" alt="kytka">
+            </div>
+        </div>
+        <div class="vedlejsi">
+            <div class="radek1">
+                <img src="../obrazky/Cat03.jpg" alt="kočka">
+                <img src="../obrazky/Cat03.jpg" alt="kočka">
+                <img src="../obrazky/Cat03.jpg" alt="kočka">
+            </div>
+            <div class="radek">
+                <img src="../obrazky/mario.png" alt="mario">
+                <img src="../obrazky/mario.png" alt="mario">
+                <img src="../obrazky/mario.png" alt="mario">
+            </div>
+            <div class="radek">
+                <img src="../obrazky/kytka.webp" alt="kytka">
+                <img src="../obrazky/kytka.webp" alt="kytka">
+                <img src="../obrazky/kytka.webp" alt="kytka">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
