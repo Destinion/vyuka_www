@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTS GRID</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <h1>GRID - Automatická šířka sloupců</h1>
+    <div class="container">
+    <!-- Deklaruje oblast GRID-->
+      <div class="row">
+          <!--Samotná hodnota col počítá automaticky počet sloupců, dle deklarovaných col v jednom řádku - u lichých počtů má levý krajní sloupec hodnotu +1 -->
+          <div class="col">
+              1.
+          </div>
+          <div class="col">
+              2.
+          </div>
+          <div class="col">
+              3.
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              1.
+          </div>
+          <div class="col">
+              2.
+          </div>
+          <div class="col">
+              3.
+          </div>
+          <div class="col">
+              4.
+          </div>
+      </div>
+    </div>
+
+    <h1>GRID - nastavení vlastní šířky sloupce</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1. sloupec - automatický
+            </div>
+            <div class="col-8">
+                2. sloupec - spojených 8 sloupců
+            </div>
+            <div class="col-1">
+                3. sloupec - spojený 1 sloupec
+            </div>
+        </div>
+    </div>
+
+    <h1>GRID - použití breakpoints</h1>
+    <!--
+      Dle zalamovacího bodu, dojde k 'zahození' GRIDu a obsah se začne zalamovat, pokud je rozměr stránky menší než breakpoint
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md" style="color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+            </div>
+            <div class="col-md-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+            </div>
+            <div class="col-md" style="color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum quaerat, quis autem atque tempora magni. Molestiae fuga atque odio ipsum qui ab sed, aliquam minus necessitatibus quia, ipsam recusandae.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

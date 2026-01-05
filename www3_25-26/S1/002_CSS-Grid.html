@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            display: grid; /*deklaruje, že se jedná o mřížku*/
+            grid-template-columns: 1fr 2fr 1fr; /*deklaruje počet a velikost sloupců*/
+            /*relativní jednotka FR - představuje frakci/díl velikosti objektu*/
+
+            grid-template-rows: 100px 200px;
+            border: 1px solid black;
+        }
+        div{
+            border: 1px solid black;
+        }
+
+        /*Pozicování v mřížce*/
+        .pozice1{
+            grid-area: 2 / 1 / 2 / 1;
+            background-color: yellow;
+        }
+        .pozice2{
+            grid-area: 2 / 1 / 2 / 3; /*představuje číselné souřadnice mřížky
+            - počáteční řádek / počáteční sloupec / koncový řádek / koncový sloupec
+            */
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--GRID je možné aplikovat na celý dokument skrze BODY, nebo jen na určitý blok 
+    (= kontejner)-->
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div> <!--Bez deklarace pozice tento prvek vytéká ven-->
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="pozice1"></div>
+        <div class="pozice2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- u viewport řešíme jak se má stránka chovat na různých zařízeních
+      - hodnota 1.0 udává poměr mezi velikostí viewportu a velikostí obsahu dle velikosti zařízení
+    -->
+    <title>Ukázka RWD</title>
+
+    <style>
+        img{
+            width: 30vw;
+            min-width: 200px;
+            max-width: 700px;
+        }
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap; /*zajišťuje zalomení obsahu dle viditelné plochy stránky*/
+
+        }
+        /*pomocí @media můžeme nastavit specifické vlastnosti CSS, které se projeví na specifických velikostích obrazovky*/
+        @media (max-width: 600px) {
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 1em;
+            }
+            div{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ukázka RWD</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum asperiores nulla fuga dolor optio facere iste voluptate molestiae obcaecati aut, officia, fugit delectus laudantium? Numquam dignissimos asperiores eligendi cum minus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum asperiores nulla fuga dolor optio facere iste voluptate molestiae obcaecati aut, officia, fugit delectus laudantium? Numquam dignissimos asperiores eligendi cum minus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum asperiores nulla fuga dolor optio facere iste voluptate molestiae obcaecati aut, officia, fugit delectus laudantium? Numquam dignissimos asperiores eligendi cum minus.</p>
+
+    <div>
+        <img src="mario.png" alt="mario">
+        <img src="mario.png" alt="mario">
+        <img src="mario.png" alt="mario">
+    </div>
+</body>
+</html>
