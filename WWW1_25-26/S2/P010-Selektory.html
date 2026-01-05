@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektory CSS</title>
+    <style>
+        h1{
+            text-decoration: underline;
+        }
+        div{
+            font-style: normal;
+        }
+        /*
+            u selektorů třídy je potřeba u HTML prvku napsat atribut class a do něj hodnotu selektoru
+            v css třídu zapisujeme s tečkou na začátku - v názvu nesmí být mezery, ani diakritika
+        */
+        .trida1{
+            /* lze používat opakovaně; lze používat i u více různých prvků */
+            font-style: italic;
+        }
+        div.trida1{
+            /* vybere pouze prvky div, co mají class s hodnotou trida1 */
+            color: slateblue;
+        }
+
+        /* Selektor ID - lze jednu hodnotu použít pouze 1x v dokumentu - užití: javascript, interní odkazy */
+        #unikatni_hodnota{
+            color: red;
+        }
+        /*
+            HIERARCHIE CSS
+            - nejdříve se aplikuje atribut prvku, ten přebije hodnota z třídy, tu přebije hodnota ID a tu přebije inline CSS
+        */
+    </style>
+</head>
+<body>
+    <h1>Selektory v CSS</h1>
+    <div class="trida1 trida2"> <!--Tento prvek má dvě třídy - trida1, trida2-->
+        <h2 id="unikatni_hodnota">Nadpis 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat dolor quisquam blanditiis itaque debitis recusandae? Sapiente possimus, praesentium soluta quisquam corporis harum ipsam, nihil maxime, totam et obcaecati eveniet?</p>
+    </div>
+    <div class="trida1">
+        <h2>Nadpis 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat dolor quisquam blanditiis itaque debitis recusandae? Sapiente possimus, praesentium soluta quisquam corporis harum ipsam, nihil maxime, totam et obcaecati eveniet?</p>
+    </div>
+    <div>
+        <h2 class="trida1">Nadpis 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat dolor quisquam blanditiis itaque debitis recusandae? Sapiente possimus, praesentium soluta quisquam corporis harum ipsam, nihil maxime, totam et obcaecati eveniet?</p>
+    </div>
+</body>
+</html>

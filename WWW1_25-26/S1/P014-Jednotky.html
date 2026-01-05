@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolutní a relativní jednotky velikosti</title>
+
+    <style>
+        .blok1{
+            width: 90vw; /*vw - viewport width - % z viditelná šířka obrazovky*/
+            height: 100vh; /*vh - viewport height - % z viditelná výška obrazovky*/
+            /*vw, vh - udávají se od 1 do 100*/
+
+            background-color: rebeccapurple;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .prvek{
+            width: 20%; /*Procentuální část nadřazeného prvku*/
+            height: 50%;
+            background-color: chartreuse;
+
+            /* Tyto atributy slouží k nastavením limitů pro relativní rozměry - údavají se px */
+            min-width: 100px;
+            min-height: 100px;
+            max-width: 300px;
+            max-height: 300px;    
+        }
+
+        /*relativní jednotky písma - em, rem*/
+        p{
+            font-size: 1.5em; /* 150% současné velikosti písma*/
+        }
+        .absolutni{
+            font-size: 1.5rem; /* 150% původní velikosti písma systému*/
+        }
+
+        h1{
+            font-size: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="blok1">
+        <div class="prvek"></div>
+        <div class="prvek"></div>
+        <div class="prvek"></div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo voluptates, exercitationem obcaecati soluta est rem in autem ratione repellat cum, illo illum odit consectetur provident nemo inventore maiores unde reiciendis.</p>
+    <div class="absolutni">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nisi dignissimos porro inventore totam deserunt voluptatum quas qui dolore neque aliquam corporis fugit labore, asperiores rem molestias. Iste, animi sequi!
+        <p>Tento prvek má hodnotu em 1.5 z rem 1.5</p>
+    </div>
+
+    <h1>Změna pomocí rem</h1>
+    <div class="obrazovka"></div>
+</body>
+</html>

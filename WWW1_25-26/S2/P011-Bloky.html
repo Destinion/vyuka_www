@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributy bloků v CSS</title>
+    <style>
+        /*Bloky - mohou používat všechny atributy CSS*/
+        .text{
+           color: blue; /*barva textu*/
+           text-align: center; /*zarovnávání textu */
+           font-size: 24px; /*velikost písma*/
+           font-weight: 900; /*tučnost písma*/
+           font-style: italic; /*styl písma - normal,  italic*/
+           text-decoration: underline; /*dekorace písma - podtržení*/
+           text-transform: uppercase; /*nastavuje kapitálky*/
+           font-family: 'Courier New', Courier, monospace; /*nastavuje font písma*/
+        }
+        div{
+            background-color: yellow;
+        }
+
+        /*Atributy pro velikost bloků*/
+        .velikost{
+            width: 100px; /*šířka bloku*/
+            height: 100px; /*výška bloku*/
+            /*pozor na přetečení obsahu - a) zvětšíme blok || b) použijeme overflow*/
+            overflow: hidden; /*hidden - skryté přetečení; scroll - skrolování obsahu; visible - bez krytí přetečení*/
+            /*overflow-y, overflow-x => řeší přetečení jedné z os */
+        }
+        .ramecek1{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black; /*rámeček prvku (shorthand) - tloušťka stěn, typ čáry, barva čáry*/
+        }
+        .ramecek2{
+            width: 200px;
+            height: 200px;
+
+
+            border-width: 5px; /*tloušťka čáry*/
+            border-style: solid; /*typ čáry ohraničení - solid, none*/
+            border-color: red; /*barva ohraničení*/
+            border-radius: 50%; /*zaoblení rámečku - px nebo %*/
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Atributy bloků v CSS</h1>
+        <p>Tento text je uvnitř bloku s třídou .text</p>
+    </div>
+
+    <div class="velikost">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptas quasi, provident perspiciatis ex enim aspernatur dolorum odio, soluta perferendis id iure cumque quisquam reiciendis architecto corrupti molestiae repudiandae minus.
+    </div>
+    <div class="velikost">
+
+    </div>
+    <div class="ramecek1">
+
+    </div>
+    <div class="ramecek2">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloky v CSS</title>
+    <style>
+        /* DIV může využít všechny atributy CSS */
+        /* Obsah uvnitř bloku (text, obrázky, další prvky) DĚDÍ vlastnosti nadřazeného bloku */
+        div{
+            color: red;
+        }
+        h1{
+            color: blue; /*tento atribut přebíjí dědičnost, protože je až uvnitř bloku*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Nadpis</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ea esse recusandae voluptas voluptates quos quasi facere at cum sequi, qui, nostrum nam accusantium molestiae culpa minus, debitis quaerat placeat!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+h1{
+    color: darkgreen;
+}
+h3{
+    text-align: center;
+    text-transform: capitalize;
+}
+p{
+    text-align: justify;
+    font-size: 18px;
+    font-style: italic;
+}
+strong{
+    text-decoration: underline;
+}

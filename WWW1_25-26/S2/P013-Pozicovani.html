@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozicování objektů</title>
+    <style>
+        .blok{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+        /*Display: flex - musí být u nadřazenho prvku*/
+        .flex{
+            display: flex; /*povinný pro další atributy*/
+            height: 500px;
+            background-color: aqua;
+            justify-content: space-evenly; /*horizontální zarovnání prvků - center, space-between, space-around*/
+            align-items: center; /*vertikální zarovnání - center, baseline, stretch*/
+            flex-direction: row; /*zarovní prvků V nebo H - column, row*/
+        }
+        .sticky{
+            position: sticky; /*pokud uživatel scrollne za prvek tak se při kombinaci s top: 0 přichytí k hornímu rohu obrazovky*/
+            top: 0; /*souřadnice z horního okraje stránky*/
+            background-color: red;
+        }
+        .absolute{
+            position: absolute; /*Udává absolutní pozici. Překrývá prvky*/
+            top: 1200px; /*top, right, left, bottom*/
+            right: 10px;
+            background-color: aliceblue;
+        }
+        .relative{
+            /*nejčastější varianta. častokrát v kombinaci  s display flex - prvek se pozicí uzpůsobuje okolí*/
+        }
+        .static{
+            /*defaultní hodnota - není na ní možné použít top, left, right nebo bottom*/
+        }
+        .fixed{
+            /*fixuje objekt na viditelné části obrazovky*/
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: flex</h1>
+    <main class="flex">
+        <div class="blok"></div>
+        <div class="blok"></div>
+        <div class="blok"></div>
+    </main>
+
+    <h1>Position</h1>
+    <h2 class="sticky">Position sticky</h2>
+    <h2 class="absolute">Position absolute</h2>
+    <h2 class="relative">Position relative</h2>
+    <h2 class="static">Position static</h2>
+    <h2 class="fixed">Position fixed</h2>
+
+    <h1>GRID</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae repudiandae, fuga at minus error similique rerum tempora laudantium. Omnis ut id, eveniet repellendus ex saepe molestias incidunt fuga dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus praesentium hic architecto mollitia? In, provident tenetur consequatur itaque dignissimos, labore amet ipsum sequi corporis quas libero mollitia quia. Neque!
+    </p>
+
+    
+</body>
+</html>

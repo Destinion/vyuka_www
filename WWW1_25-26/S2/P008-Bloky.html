@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloky v HTML</title>
+    <style>
+        div{
+            background-color: red;
+            color: white;
+        }
+        span{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--Bloky - nemají v základní podobě žádnou CSS vlastnost - > lze jim nastavit jakoukoliv CSS vlasnost-->
+    <h1>Outline Bloky - nejpoužívanější</h1>
+    <div>
+        Toto je ukázka DIV
+    </div>
+
+    <h1>Inline bloky</h1>
+    <span>
+        Toto je ukázka SPAN
+    </span>
+
+    <!--Ukázka span a div-->
+    <div>
+        <h1>Nadpis</h1>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Odio modi a eveniet, deleniti consequuntur dignissimos sapiente accusantium laborum itaque recusandae pariatur, ad vero quae quaerat quia quis! Molestiae, libero doloremque?</p>
+    </div>
+
+    <!--Ukázka struktura WWW pomocí DIV-->
+    <div>
+        <div>
+            <h1>Nadpis</h1>
+            <p>Odstavec</p>
+        </div>
+        <div>
+            <h1>Nadpis</h1>
+            <p>Odstavec</p>
+        </div>
+        <div>
+            <h1>Nadpis</h1>
+            <p>Odstavec</p>
+            <div></div>
+        </div>
+    </div>
+
+    <h1>Sémantické prvky bloků HTML</h1>
+    <!--Fungují stejně jako DIV, akorát pracují se SEO-->
+    <header>Záhlaví stránky</header>
+    <nav>Navbar - navigační menu</nav>
+    <main>Hlavní obsah stránky</main>
+    <footer>Patička stránky</footer>
+    <article>Články/reklamy</article>
+    <section>Sekce/úsek</section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+1 - Vytvořte složku C009 - v ní vytvořte HTML soubor C009.html a C009.css
+2 - V HTML souboru vytvořte nadpis H1 s textem - Zde je inline stylopis
+3 - V HTML souboru vytvořte nadpis H2 s textem - Zde je interní stylopis
+4 - V HTML souboru vytvořte nadpis H3 s textem - Zde je externí stylopis
+
+
+5 - Pro nadpis H1 připojte inline css, které nastaví barvu písma na červenou (red)
+6 - V hlavičce HTML vytvořte interní CSS, které nastaví barvu písma na modrou pro nadpis H2
+7 - K HTML souboru připojte stylopis C009.css, kde bude pomocí selektoru pro nadpis H3 změněna velikost písma nadpisu H3 na 56px
