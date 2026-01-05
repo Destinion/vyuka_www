@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukázka DOM</title>
+    <style>
+        main{
+            width: 90%;
+            height: 500px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+        #ovladani{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #ovladani *{
+            margin: 20px;
+        }
+        .telo_plochy{
+            border: 1px solid black;
+        }
+        #historie{
+            overflow-y: hidden;
+            text-wrap: wrap;
+        }
+        .disabled{
+            pointer-events: none;
+            opacity: 0.9;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <h1>Vítejte v generátoru náhodných obrazců</h1>
+    <main id="pracovni_plocha">
+        <div id="historie" class="telo_plochy disabled">
+            <!--Nastavit overflow hidden, nové prvky nahorů-->
+        </div>
+        <div id="aktivita" class="telo_plochy disabled">
+            <!--Elder scroll pro úvodní a příběhový text následně h2 s textem lokace, podtím obraz s plochou-->
+        </div>
+        <div id="ovladani" class="telo_plochy">
+            <i class="fa-solid fa-arrow-up"></i>
+            <div class="sides">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <i class="fa-solid fa-arrow-down"></i>
+            <button id="akce">Spustit hru</button>
+        </div>
+    </main>
+
+    <script>
+        //historie - eviduje aktivity
+        //plocha hry - zástupný název co se přepne na hrací plochu, nejdřív je disabled
+        //ovládání - duh
+
+
+        const akce = document.getElementById("akce");
+        akce.addEventListener("click", function(){
+            akce.innerText = "Provést akci";
+        })
+    </script>
+</body>
+</html>

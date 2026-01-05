@@ -1,0 +1,26 @@
+<!--PRO C015 - DOM pokročilé-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Přidávání položek do seznamu</h1>
+
+    <input type="text" id="vstup" placeholder="Zadejte text">
+    <button id="pridatBtn">Přidat</button>
+    <ul id="seznam">
+    </ul>
+
+    <script>
+        const tlacitko = document.getElementById("pridatBtn");
+        tlacitko.addEventListener("click", function(){
+            let promenna = document.getElementById("vstup").value;
+            document.getElementById("seznam").innerHTML += "<li>" + promenna + "</li>";
+            document.getElementById("vstup").value = "";
+        });      
+    </script>
+</body>
+</html>

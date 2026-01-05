@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#kruh1{
+    background-color: red;
+}
+#kruh2{
+    background-color: green;
+}
+#kruh3{
+    background-color: blue;
+}

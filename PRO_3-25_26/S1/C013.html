@@ -1,0 +1,35 @@
+<!--
+Vytvořte HTML dokument, který bude obsahovat 3 odstavce s lorem ipsum a bude mít jeden nadpis s textem - Rošambo
+
+Vaším bojovým úkolem, je každému odstavci, přiřadit vlastní barvu pomocí DOM v JS
+Vaším druhým úkolem je prohodit pomocí JavaScrptu text mezi 1. a 3. odstavcem a mezi nadpisem a 2. odstavcem
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="nadpis">Rosambo</h1>
+    <p id="odstavec1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolorem quidem sunt autem velit possimus rem maiores, quos reprehenderit animi vero exercitationem, officiis sapiente cumque atque doloribus nemo facere saepe!</p>
+    <p id="odstavec2">Pomocný text</p>
+    <p id="odstavec3">Třetí odstavec</p>
+
+    <script>
+        let text1 = document.getElementById("nadpis").innerText;
+        let text2 = document.getElementById("odstavec2").innerText;
+        document.getElementById("odstavec2").innerText = text1;
+        document.getElementById("nadpis").innerText = text2;
+
+        let text3 = document.getElementById("odstavec1").innerText;
+        let text4 = document.getElementById("odstavec3").innerText;
+        document.getElementById("odstavec1").innerText = text4;
+        document.getElementById("odstavec3").innerText = text3;
+
+        document.getElementById("odstavec1").style.color = "#cf04a1";
+    </script>
+</body>
+</html>

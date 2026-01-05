@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Připojení JS k HTML</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="ukazka"></div>
+
+    <!--JavaScript uvnitř HTML je vždy na konci body-->
+    <!--Ukázka interního JavaScriptu-->
+    <script>
+        //Ukázka připojení a aplikace JS u HTML - DOM
+        document.getElementById("ukazka").innerHTML = "Ahoj světe. Jak se máš?";
+    </script>
+
+    <!--Ukázka připojení JavaScriptu k HTML souboru-->
+    <script src="P001-syntaxe.js"></script>
+</body>
+</html>

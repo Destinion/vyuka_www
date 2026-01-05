@@ -1,0 +1,64 @@
+<!--PRO3 C010 - DOM Semafor-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Semafor</title>
+    <style>
+        #kruh1{
+            background-color: red;
+        }
+        #kruh2{
+            background-color: orange;
+        }
+        #kruh3{
+            background-color: green;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        body{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div id="kruh1" onmouseover="zmenaBarvy1()" onmouseout="vratitBarvu1()"></div>
+    <div id="kruh2" onmouseover="zmenaBarvy2()" onmouseout="vratitBarvu2()" onclick="vystraha()"></div>
+    <div id="kruh3" onmouseover="zmenaBarvy3()" onmouseout="vratitBarvu3()"></div>
+
+    <script>
+        function zmenaBarvy1(){
+            document.getElementById("kruh1").style.backgroundColor = "#ff00ff";
+        }
+
+        function vratitBarvu1(){
+            document.getElementById("kruh1").style.backgroundColor = "red";
+        }
+
+        function zmenaBarvy2(){
+            document.getElementById("kruh2").style.backgroundColor = "#ff00ff";
+        }
+
+        function vratitBarvu2(){
+            document.getElementById("kruh2").style.backgroundColor = "orange";
+        }
+
+        function zmenaBarvy3(){
+            document.getElementById("kruh3").style.backgroundColor = "#ff00ff";
+        }
+
+        function vratitBarvu3(){
+            document.getElementById("kruh3").style.backgroundColor = "green";
+        }
+
+        function vystraha(){
+            alert("bacha na barvu!");
+        }
+    </script>
+</body>
+</html>

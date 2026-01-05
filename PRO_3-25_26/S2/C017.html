@@ -1,0 +1,37 @@
+<!--PRO3 C013 - DOM Funkce s argumenty-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cena nákupu je: <span id="cislo">0</span></p>
+    <button onclick="pricist(1)">+1</button>
+    <button onclick="pricist(3)">+3</button>
+    <button onclick="pricist(5)">+5</button>
+
+    <button onclick="odecist(1)">-1</button>
+    <button onclick="odecist(3)">-3</button>
+    <button onclick="odecist(5)">-5</button>
+
+
+    <script>
+        function pricist(hodnota){
+            let cislo = document.getElementById("cislo").innerText;
+            cislo = Number(cislo);
+            cislo += hodnota; //cislo = cislo + hodnota
+            document.getElementById("cislo").innerText = cislo;
+        }
+    
+        function odecist(hodnota){
+            let cislo = document.getElementById("cislo").innerText;
+            cislo = Number(cislo);
+            cislo -= hodnota; //cislo = cislo + hodnota
+            document.getElementById("cislo").innerText = cislo;
+        }
+    </script>
+</body>
+</html>

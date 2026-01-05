@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST4B</title>
+</head>
+<body>
+    <h1 id="vitani">Vitejte, </h1>
+    <div onmouseover="spustit()">Přejeď myší zde</div>
+
+    <p id="prvni">
+        1
+    </p>
+
+    <script>
+        function spustit(){
+            let jmeno = "Ondřej";
+            document.getElementById("vitani").innerText += jmeno;
+
+            document.body.style.fontFamily = "Helvetica";
+
+            let cislo = document.getElementById("prvni").innerText;
+            cislo = Number(cislo);
+            document.getElementById("prvni").innerText = cislo + 1;
+        }
+    </script>
+</body>
+</html>

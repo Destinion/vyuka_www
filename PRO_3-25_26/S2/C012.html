@@ -1,0 +1,22 @@
+<!--Přidejte do těla HTML prvek obrázku a pomocí JS mu změňte atribut src na nový obrázek
+následně pomocí JS upravte velikost obrázku na 50% šířky stránky
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="obrazek" src="../obrazky/Cat03.jpg" alt="obrazek posledni">
+
+    <script>
+        let obrazek = document.getElementById("obrazek");
+        obrazek.setAttribute("src", "../obrazky/labubu1.jpg");
+
+        obrazek.style.width = "50vw";
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventy v DOM</title>
+</head>
+<body>
+    <!-- Eventy slouží k interakci uživatele se stránkou-->
+    <!-- Eventy lze spouštět - 1. přes HTML prvek, 2. přes addEventListener -->
+    <!-- Účelem eventů je téměř vždy spustit nějakou funkci -->
+    <!-- onclick - při kliknutí myši-->
+    <button onclick="spustit()">Stiskni mě</button>
+
+    <!--Eventy můžeme opakovat-->
+    <h1 onclick="spustit()">Klikni na mě</h1>
+
+    <!--Jeden prvek HTML může být součástí více eventů-->
+    <!--
+        onmouseover - přejetí kurzorem
+        onmouseout - odjetí z prvku kurzorem
+    -->
+    <img src="../obrazky/kytka.webp" alt="kyticka" onmouseover="zmenit()" onmouseout="vratit()" id="obrazek">
+
+    <script>
+        function spustit(){
+            //Tato funkce je volaná tlačítkem s eventem onclick
+            document.body.style.backgroundColor = "#6A0DAD";
+        }
+
+        function zmenit(){
+            document.getElementById("obrazek").setAttribute("src", "../obrazky/labubu1.jpg")
+        }
+
+        function vratit(){
+            document.getElementById("obrazek").setAttribute("src", "../obrazky/kytka.webp")
+        }
+
+        // Použití addEventListener
+        // aby správně fungoval, musí být napojený na nějaký HTML prvek - body, tlačítko, div a další
+        //Eventy se zde zapisují stejně jako u HTML prvků, akorát se vynechává slovíčko on...
+        const obrazek1 = document.getElementById("obrazek");
+
+        obrazek1.addEventListener("click", function(){
+            alert("Kliknutí na obrázek!"); // popup okno s výstrahou
+        });
+        obrazek1.addEventListener("mouseover", function(){
+            document.body.style.backgroundColor = "white";
+        });
+    </script>
+</body>
+</html>

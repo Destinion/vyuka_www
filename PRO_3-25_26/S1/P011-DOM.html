@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulace s Atributy</title>
+</head>
+<body>
+    <h1>Výsledná hodnota value je: </h1>
+    <p id="cislo">11</p>
+    <img id="obrazek" src="../obrazky/Cat03.jpg" alt="Obrázek kočky">
+
+    <input type="number" id="vstup" value="15"> <!--value - je zde dočasné, pak se sbírá pomocí eventů při odeslání formuláře-->
+
+    <script>
+        // 1. getAttribute - získá hodnotu atributu
+        let ziskanahodnota = document.getElementById("obrazek").getAttribute("src");
+        console.log(ziskanahodnota);
+
+        // 2. setAttribute - nastaví hodnotu atributu
+        // není povinné, ale většinou se před změnou hodnoty obsah prvku ukládá do proměnné
+        let obrazek1 = document.getElementById("obrazek"); // - v proměnné je nyní uložen celý objekt obrázku, se všemi jeho vlastnostmi
+        obrazek1.setAttribute("src", "../obrazky/kytka.webp"); //(atribut, hodnota atributu)
+
+
+        //3. removeAttribute - odstraní atribut z prvku
+        obrazek1.removeAttribute("alt");
+
+        //4. value - získá číselnou hodnotu z HTML prvku - dynamický prvek
+        let cislo = document.getElementById("vstup").value;
+        console.log(cislo);
+
+        document.getElementById("cislo").innerText = cislo;
+    </script>
+</body>
+</html>

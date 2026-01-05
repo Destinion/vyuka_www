@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST4A</title>
+</head>
+<body>
+    <h1 id="vitani">Vítejte, </h1>
+    <button type="button" onclick="spustit()">Spustit</button>
+
+    <p id="prvni">
+        Zde mám první odstavec
+    </p>
+    <p id="druhy">
+        Zde mám druhý odstavec
+    </p>
+
+    <script>
+        function spustit(){
+            let jmeno = "Ondřej";
+            document.getElementById("vitani").innerText += jmeno;
+
+            document.body.style.backgroundColor = "#fc4abf";
+
+            let odstavec1 = document.getElementById("prvni").innerText;
+            let odstavec2 = document.getElementById("druhy").innerText;
+
+            document.getElementById("prvni").innerText = odstavec2;
+            document.getElementById("druhy").innerText = odstavec1;
+        }
+    </script>
+</body>
+</html>

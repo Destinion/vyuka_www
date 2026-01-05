@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - úvod</title>
+</head>
+<body>
+    
+    <button onclick="zmenaBarvy()">Změna barvy stránky</button>
+
+
+    <script>
+        // DOM - zajišťuje interakci mezi JavaScriptem a HTML dokumentem
+        // HTML DOM - zkracuje cestu napříč dokumentem
+
+        document.body.style.backgroundColor = "#b64998";
+        console.log("Toto je vidět pouze v konzoli");
+        
+
+        function zmenaBarvy(){
+            document.body.style.backgroundColor = "#2ad535";
+            document.body.innerHTML = "<h1>Ukázka DOM</h1>";
+            document.body.innerHTML += "<button onclick='vraceniBarvy()'>Zpět</button>"
+        }
+
+        function vraceniBarvy(){
+            document.body.style.backgroundColor = "#b64998";
+            document.body.innerHTML = "<button onclick='zmenaBarvy()'>Změna barvy stránky</button>";
+        }
+    </script>
+</body>
+</html>

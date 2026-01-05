@@ -1,0 +1,38 @@
+<!--
+Vytvořte HTML dokument, který bude obsahovat 3 odstavce s nějakým vlastném textem a bude mít jeden nadpis s textem - Rošambo
+
+Vaším bojovým úkolem, je každému odstavci, přiřadit vlastní barvu pomocí DOM v JS
+Vaším druhým úkolem je prohodit pomocí JavaScriptu text mezi 1. a 3. odstavcem a mezi nadpisem a 2. odstavcem
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C011</title>
+</head>
+<body>
+    <h1 id="nadpis">Rošambo</h1>
+    <p id="odstavec1">Odstavec 1</p>
+    <p id="odstavec2">Odstavec 2</p>
+    <p id="odstavec3">Odstavec 3</p>
+
+    <script>
+        let text1 = document.getElementById("nadpis").innerText;
+        let text2 = document.getElementById("odstavec2").innerText;
+
+        document.getElementById("nadpis").innerText = text2;
+        document.getElementById("odstavec2").innerText = text1;
+
+        document.getElementById("nadpis").style.color = "#cf04a1";
+        document.getElementById("odstavec2").style.color = "#0a0aff";
+
+        let text3 = document.getElementById("odstavec1").innerText;
+        let text4 = document.getElementById("odstavec3").innerText;
+
+        document.getElementById("odstavec1").innerText = text4;
+        document.getElementById("odstavec3").innerText = text3;
+    </script>
+</body>
+</html>

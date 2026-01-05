@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .barva{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--Další metody pro práci s DOM-->
+    <div id="hlavni">
+
+    </div>
+
+    <script>
+        //Tvorba bloků a prvků JS
+        const novyPrvek = document.createElement("h1"); //vytvoří proměnnou jejíž obsah generuje nadpis h1
+        novyPrvek.innerHTML = "Nový nadpis"; // přidá proměnné interní HTML text
+
+        novyPrvek.classList.add("barva"); // Přidá třídu k prvku
+
+        document.getElementById("hlavni").appendChild(novyPrvek); // přidá prvek do rodiče = nadřazeného prvku
+
+
+        let nova = novyPrvek.cloneNode(true); //u nových browserů nelze dvakrát za sebou append child, musí se použít clone node na duplicitu
+        document.getElementById("hlavni").appendChild(nova);
+
+        //Odstranění prvku od rodiče
+        document.getElementById("hlavni").removeChild(novyPrvek);
+    </script>
+
+</body>
+</html>
