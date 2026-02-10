@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    position: sticky;
+}
+
+.telicko{
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+
+    background-color: #c0c0bf5d;
+    border-radius: 10px;
+}
+
+.dil{
+    width: 40%;
+    padding: 10px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(240, 240, 240);
+    color: #2c1b1b;
+}
+
+p{
+    font-family: Georgia, Times, 'Times New Roman', serif, sans-serif;
+    text-align: justify;
+}
+
+h1, h2{
+    font-family: Helvetica, sans-serif;
+}

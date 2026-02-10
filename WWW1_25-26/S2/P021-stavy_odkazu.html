@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        a:visited{
+            /*Stav odkazu po kliknutí - není příliš používán z pohledu UI u webů s menším obsahem*/
+            color: #ff44ca;
+        }
+        a:active{
+            /*Stav odkazu při kliknutí nebo po dobu kliknutí - časté užití u CTA tlačítek*/
+            opacity: 0.5;
+        }
+        a:hover{
+            /*Stav odkazu při přejetí myší - nepoužívá se u mobilů*/
+            font-size: 1.1em;
+        }
+        a:link{
+            /*defaultní stav odkazu - dá se nahradit čistě písmenem a*/
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        /*Stavy odkazů fungují na všechny prvky HTML*/
+        h1:hover{
+            text-transform: uppercase;
+        }
+
+        div{
+            width: 500px;
+            height: 100px;
+            background-color: #a01199a5;
+        }
+        div:hover{
+            background-color: #f35207;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stavy odkazů</h1>
+    <a href="https://skolahostivar.cz">
+        Stránky školy
+    </a>
+    <br>
+    <br>
+    <br>
+    <a href="https://www.netflix.com/cz">Druhý odkaz</a>
+
+    <div>
+
+    </div>
+</body>
+</html>

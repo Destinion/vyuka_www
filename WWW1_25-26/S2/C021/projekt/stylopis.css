@@ -1,0 +1,10 @@
+a:hover{
+   background-color: aquamarine; 
+}
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: cornflowerblue;
+}

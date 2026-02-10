@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relativní URL</title>
+    <!--Pro relativní URL se musí dopsat část chybějící cesty, což je složka stylopis-->
+    <link rel="stylesheet" href="stylopis/stylopis.css">
+</head>
+<body>
+    <!--Zde stačí napsat pouze nazev souboru, protože celý zbytek absolutní adresy je identický-->
+    <a href="cil.html">
+        Odkaz na cil.html, který je ve stejné složce na stejné úrovni
+    </a>
+
+    <br>
+
+    <!--.. - představují posun v úrovni o jeden blok nahoru -->
+    <a href="../P005-stylopis/externi.html">
+        Odkaz na soubor v jiné složce v jiném adresáři
+    </a>
+</body>
+</html>
