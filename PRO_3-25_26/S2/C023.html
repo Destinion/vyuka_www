@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C023</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #e31cb5;
+            margin: 5px;
+
+            
+        }
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let pocet = prompt("Zadej počet bloků");
+        pocet = Number(pocet);
+        let novyBlok;
+
+        while(pocet > 0){
+            novyBlok = document.createElement("div");
+            novyBlok.setAttribute("class", "prvek");
+
+            document.body.appendChild(novyBlok);
+            pocet--;
+        }
+    </script>
+</body>
+</html>

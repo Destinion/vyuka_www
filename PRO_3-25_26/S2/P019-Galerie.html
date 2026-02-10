@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#galerie{
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="#">
+            <input type="number" id="radky" placeholder="Počet řádků">
+            <input type="number" id="sloupce" placeholder="Zadej počet sloupců">
+            <button onclick="spustit()">Spustit</button>
+        </form>
+    </div>
+    <div id="galerie">
+
+    </div>
+
+    <script>
+        function spustit(){
+            let radky = document.getElementById("radky").value; //Nelze použít innerHTML -> formulář vyžaduje value (user input)
+            //Nelze použít document.getElementById("radky") => uloží do proměnné celý kod inputu
+
+            let sloupce = document.getElementById("sloupce").value;
+            let obrazek = document.createElement("img");
+            obrazek.setAttribute("src", "../obrazky/Cat03.jpg");
+            let vypocet1 = (1/radky) * 100 + "%";
+            let vypocet2 = (1/sloupce) * 100 + "%";
+            obrazek.setAttribute("width", vypocet1);
+            obrazek.setAttribute("height", vypocet2);
+            
+            
+
+            console.log("Počet řádků: " + radky);
+            console.log("Počet sloupců: " + sloupce);
+
+            for (let i = 0; i < radky; i++){
+                for (let j = 0; j < sloupce; j++){
+                    document.getElementById("galerie").appendChild(obrazek.cloneNode(true));
+                }
+            }
+        }
+    </script>
+</body>
+</html>

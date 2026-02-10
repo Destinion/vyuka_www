@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: rgb(117, 156, 191);
+        }
+    </style>
+</head>
+<body>
+    <div id="disco"></div>
+    <button onclick="vypnout()">Vypni se!!!!</button>
+
+
+    <script>
+        /*function vypnout(){
+            if (true){
+                break;
+            }
+        }*/
+
+        let spustit = false;
+        let pomocna = 1;
+
+        document.addEventListener("DOMContentLoaded", () =>{
+            if (spustit) return;
+            spustit = true;
+            cyklus();
+        })
+
+        function cyklus(){
+            while (spustit){
+                if(pomocna == 1){
+                        pomocna = 2;
+                        document.getElementById("disco").style.backgroundColor = "blue";
+                        setTimeout(cyklus, 1000);
+                        break;          
+                }else {
+                        pomocna = 1;
+                        document.getElementById("disco").style.backgroundColor = "red";
+                        setTimeout(cyklus, 1000);
+                        break;      
+                }
+            }
+        }
+
+
+
+
+        // U tohoto kodu došlo k přetečení - protože se očekává při načtení stránky že provede nekonečný cyklus
+        
+        /* document.addEventListener("DOMContentLoaded", () =>{
+            document.getElementById("disco").style.backgroundColor = "red";
+            let pomocna = 1;
+            while (true){
+                if(pomocna == 1){
+                    setInterval(() => {
+                        document.getElementById("disco").style.backgroundColor = "blue";
+                    }, 1000);
+                    pomocna = 2;
+                }else {
+                    setInterval(() => {
+                        document.getElementById("disco").style.backgroundColor = "red";
+                    }, 1000);
+                    pomocna = 1;
+                }
+            }
+        }); */
+    </script>
+</body>
+</html>
