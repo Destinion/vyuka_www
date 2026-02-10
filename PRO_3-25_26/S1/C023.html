@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .barva{
+            background-color: #e31cb5;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Vytvořte talčítko jako spouštěč kodu, po spuštění tlačítko zůstává
+    -->
+    <script>
+        let pocet = prompt("Zadej počet bloků"); // Získání dat od uživatele
+        pocet = Number(pocet); // prompt dává string - Number převede string na INTEGER
+        let blok; // zde budeme ukládat data bloku
+
+        while(pocet > 0){
+            blok = document.createElement("div"); //vygenerování prvku div
+            blok.setAttribute("class", "barva");
+            document.body.appendChild(blok);
+            pocet--;
+        }
+    </script>
+</body>
+</html>
