@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box-model</title>
+    <style>
+        div{
+            border: 2px solid #00ffff;
+            padding: 20px; /*lze rozepsat 20px 20px 20px 20px*/
+            /* padding - prostor mezi border a skutečným obsahem prvku */
+            margin: 50px; /*odsazení prvku od okolních prvků a body*/
+        }
+        h2{
+            margin-top: 80px;
+            margin-left: 40px;
+            padding: 10px 10px 10px 0px; /*top, right, bottom, left*/
+        }
+        h1{
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            width: 300px;
+        }
+        p{
+            margin: 5px; /*margin a padding u vnitřních objektů se sčítají*/
+            background-color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ukázka Box-model</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, amet, fuga esse enim pariatur, dolore sint beatae ullam blanditiis delectus asperiores provident architecto impedit odio aspernatur eligendi? Quidem, mollitia cumque.
+        <p>Ukázka odstavce</p>
+    </div>
+    <h2>Ukázka rozepsání margin</h2>
+</body>
+</html>

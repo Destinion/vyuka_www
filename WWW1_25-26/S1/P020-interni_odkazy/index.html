@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Osobní web – Jméno Příjmení</title>
+
+  <link rel="stylesheet" href="stylopis.css">
+</head>
+<!--
+  interní odkazy píšu pomocí <a href="#..."
+  prvek na který odkazuju musí mít korespondující hodnotu id
+  (href="#portfolio" - > id="portfolio")
+-->
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Jméno Příjmení</span>
+      </div>
+      <nav class="links" aria-label="Hlavní navigace">
+        <a href="#o-mne">O mně</a>
+        <a href="#dovednosti">Dovednosti</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="card hero-main">
+          <div class="kicker">Osobní web</div>
+          <h1>Ahoj, jsem Jméno. Dělám weby a učím se nové věci.</h1>
+          <p class="lead">
+            Krátké představení (1–2 věty). Napiš sem, čemu se věnuješ, co tě baví
+            a pro koho typicky tvoříš.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#projekty">Zobrazit projekty</a>
+            <a class="btn" href="#kontakt">Napsat zprávu</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <aside class="card hero-side" aria-label="Rychlé info">
+          <div class="mini">
+            <h3>Aktuálně</h3>
+            <p>Např. „Pracuji na školním projektu / portfolio / aplikaci…“</p>
+          </div>
+          <div class="mini">
+            <h3>Specializace</h3>
+            <p>HTML, CSS, JavaScript, Node.js, UX/UI, databáze…</p>
+          </div>
+          <div class="mini">
+            <h3>Lokalita</h3>
+            <p>Praha / online spolupráce</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="o-mne" class="section">
+      <div class="container">
+        <h2>O mně</h2>
+        <div class="card tile">
+          <h3>Krátký příběh</h3>
+          <p>
+            Sem dej delší odstavec (4–8 vět): kdo jsi, čemu se věnuješ, co máš za sebou,
+            jaké máš cíle. Klidně přidej i pár konkrétních výsledků.
+          </p>
+          <div class="meta" style="margin-top:14px;">
+            <span class="tag">Web development</span>
+            <span class="tag">Výuka / mentoring</span>
+            <span class="tag">UX / UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dovednosti" class="section">
+      <div class="container">
+        <h2>Dovednosti</h2>
+        <div class="grid">
+          <div class="card tile">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, responzivita, přístupnost, základní animace.</p>
+          </div>
+          <div class="card tile">
+            <h3>Backend</h3>
+            <p>Node.js / PHP, REST API, práce s databází, jednoduché autentizace.</p>
+          </div>
+          <div class="card tile">
+            <h3>Nástroje</h3>
+            <p>Git/GitHub, Docker, Figma, VS Code, základ DevOps workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekty" class="section">
+      <div class="container">
+        <h2>Projekty</h2>
+        <div class="projects">
+          <article class="card project">
+            <h3>Projekt 1</h3>
+            <p class="lead" style="margin:8px 0 0;">
+              1–2 věty, co to je a proč to existuje. Přidej odkaz na demo/repo.
+            </p>
+            <div class="meta">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>Projekt 2</h3>
+            <p class="lead" style="margin:8px 0 0;">
+              Druhý projekt – může být školní, hobby, nebo zakázka (anonymizovaně).
+            </p>
+            <div class="meta">
+              <span class="tag">Node.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Express</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <div class="contact">
+          <div class="card tile">
+            <h3>Napiš mi</h3>
+            <p class="lead" style="margin:8px 0 0;">
+              Nejrychleji e-mailem. Můžeš přidat i odkazy na sociální sítě.
+            </p>
+            <p style="margin:14px 0 0;">
+              <strong>E-mail:</strong> <a href="mailto:email@domena.cz">email@domena.cz</a><br />
+              <strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">profil</a><br />
+              <strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">repo</a>
+            </p>
+            <p class="small">Pozn.: Formulář vpravo je jen UI (odeslání vyžaduje backend nebo službu).</p>
+          </div>
+
+          <div class="card tile">
+            <h3>Kontaktní formulář</h3>
+            <form action="#" method="post">
+              <div>
+                <label for="name">Jméno</label>
+                <input id="name" name="name" type="text" placeholder="Tvoje jméno" />
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="tvuj@email.cz" />
+              </div>
+              <div>
+                <label for="msg">Zpráva</label>
+                <textarea id="msg" name="msg" placeholder="Napiš, s čím pomůžu…"></textarea>
+              </div>
+              <button class="btn primary" type="submit">Odeslat</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container row">
+        <div>© <span id="year"></span> Jméno Příjmení</div>
+        <div>
+          <a class="btn" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'})">Nahoru</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Drobný detail: automatický aktuální rok
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2{
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    position: sticky;
+    font-family: "Roboto", sans-serif;
+}
+
+.telicko{
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #016FB9;
+    border-radius: 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(43, 58, 66);
+    color: #e4e2e2;
+}
+
+.dil{
+    width: 40%;
+}
+
+p{
+    font-family: "Cambria", serif;
+    text-align: justify;
+}
+

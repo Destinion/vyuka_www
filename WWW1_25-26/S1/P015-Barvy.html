@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barvy v CSS</title>
+    <style>
+        h1{
+            color: red;
+            background-color: whitesmoke;
+        }
+        h2{
+            color: rgb(255, 0, 100); /*R - red, G - green, B - blue; hodnoty od 0 do 255*/
+        }
+        h3{
+            color: #ff00a2; /*16-ková soustava; 0 - 9, a - f; celkem 6 znaků (každá barva 2 znaky)*/
+        }
+        h4{
+            color: hsl(240, 80%, 55%); /*H - Hue, S - Saturation, L - Lightness; stupne, procenta, procenta*/
+        }
+        h5{
+            color: rgba(255, 0, 100, 0.5); /* a - alfa kanál/průhlednost - 0.1 až po 1.0*/
+        }
+        h6{
+            color: hsla(240, 80%, 55%, 0.3);
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #cc1101;
+            color: rgba(0, 100, 255, 0.8);
+            opacity: 0.5; /* průhlednost objektu*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Barva s textovým názvem</h1>
+    <h2>Barva s RGB(255, 0, 100)</h2>
+    <h3>Barva s hexovým zápisem #ff00a3</h3>
+    <h4>Barva s HSL(240, 80%, 55%)</h4>
+    <h5>Barva s RGBA(255, 0, 100, 0.5)</h5>
+    <h6>Barva s HSLA(240, 80%, 55%, 0.3)</h6>
+
+    <div>
+        Ukázka Opacity
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obrázky v HTML</title>
+    <style>
+        img{
+            /*Nepsané pravidlo - u obrázků vždy definujeme v CSS jejich rozměry*/
+            width: 200px;
+            height: auto;
+            /*pozor na height, v případě špatné hodnoty zdeformuje obrázek - lze vynechat => vypočítá se na základě width*/
+        }
+    </style>
+</head>
+<body>
+    <!--
+        src - URL cesty k obrázku
+        alt - zástupný text pro SEO a čtečky pro nevidomé
+
+        loading - lazy, eager - obrázek se nestahuje před načtením stránky, ale když uživatel doscolluje do jeho oblasti
+    -->
+    <img src="obrazky/Cat03.jpg" alt="Popis obrázku" loading="lazy">
+</body>
+</html>
